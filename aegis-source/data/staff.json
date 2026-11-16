@@ -1,0 +1,17 @@
+[
+  {
+    "id": "an",
+    "name": "Nguyễn Minh Anh",
+    "role": "Fraud Analyst"
+  },
+  {
+    "id": "bao",
+    "name": "Trần Quốc Bảo",
+    "role": "Fraud Analyst"
+  },
+  {
+    "id": "sup",
+    "name": "Lê Hoàng Nam",
+    "role": "Supervisor"
+  }
+]

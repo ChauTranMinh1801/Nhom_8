@@ -1,0 +1,3021 @@
+[
+  {
+    "id": "HS-2026-1048",
+    "alert": "CB-8048",
+    "tx": "TXN-2611150048",
+    "source": "1028 6128004",
+    "target": "0071 2891034",
+    "customer": "Nguyễn Thanh Tùng",
+    "type": "TRANSFER",
+    "amount": 128500000,
+    "before": 163500000,
+    "score": 96,
+    "priority": "Khẩn cấp",
+    "status": 0,
+    "owner": null,
+    "created": "2026-11-14T21:15:54.098Z",
+    "updated": "2026-11-14T21:15:54.098Z",
+    "received": null,
+    "started": null,
+    "completed": null,
+    "due": "2026-11-15T21:15:54.098Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T21:15:54.098Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1047",
+    "alert": "CB-8047",
+    "tx": "TXN-2611150047",
+    "source": "1028 6128005",
+    "target": "0071 2891035",
+    "customer": "Trần Ngọc Hà",
+    "type": "CASH_OUT",
+    "amount": 45300000,
+    "before": 80300000,
+    "score": 89,
+    "priority": "Cao",
+    "status": 0,
+    "owner": "an",
+    "created": "2026-11-14T20:46:54.099Z",
+    "updated": "2026-11-14T20:46:54.099Z",
+    "received": null,
+    "started": null,
+    "completed": null,
+    "due": "2026-11-15T20:46:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T20:46:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1046",
+    "alert": "CB-8046",
+    "tx": "TXN-2611150046",
+    "source": "1028 6128006",
+    "target": "0071 2891036",
+    "customer": "Lê Minh Khang",
+    "type": "PAYMENT",
+    "amount": 286200000,
+    "before": 321200000,
+    "score": 92,
+    "priority": "Cao",
+    "status": 0,
+    "owner": null,
+    "created": "2026-11-14T20:17:54.099Z",
+    "updated": "2026-11-14T20:17:54.099Z",
+    "received": null,
+    "started": null,
+    "completed": null,
+    "due": "2026-11-15T20:17:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T20:17:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1045",
+    "alert": "CB-8045",
+    "tx": "TXN-2611150045",
+    "source": "1028 6128007",
+    "target": "0071 2891037",
+    "customer": "Phạm Thu Trang",
+    "type": "CASH_IN",
+    "amount": 10175000,
+    "before": 45175000,
+    "score": 76,
+    "priority": "Trung bình",
+    "status": 0,
+    "owner": "an",
+    "created": "2026-11-14T19:48:54.099Z",
+    "updated": "2026-11-14T19:48:54.099Z",
+    "received": null,
+    "started": null,
+    "completed": null,
+    "due": "2026-11-15T19:48:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T19:48:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1044",
+    "alert": "CB-8044",
+    "tx": "TXN-2611150044",
+    "source": "1028 6128008",
+    "target": "0071 2891038",
+    "customer": "Nguyễn Thanh Tùng",
+    "type": "DEBIT",
+    "amount": 67800000,
+    "before": 102800000,
+    "score": 84,
+    "priority": "Khẩn cấp",
+    "status": 0,
+    "owner": null,
+    "created": "2026-11-14T19:19:54.099Z",
+    "updated": "2026-11-14T19:19:54.099Z",
+    "received": null,
+    "started": null,
+    "completed": null,
+    "due": "2026-11-15T19:19:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T19:19:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1043",
+    "alert": "CB-8043",
+    "tx": "TXN-2611150043",
+    "source": "1028 6128009",
+    "target": "0071 2891039",
+    "customer": "Trần Ngọc Hà",
+    "type": "TRANSFER",
+    "amount": 156500000,
+    "before": 191500000,
+    "score": 68,
+    "priority": "Cao",
+    "status": 0,
+    "owner": "an",
+    "created": "2026-11-14T18:50:54.099Z",
+    "updated": "2026-11-14T18:50:54.099Z",
+    "received": null,
+    "started": null,
+    "completed": null,
+    "due": "2026-11-15T18:50:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T18:50:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1042",
+    "alert": "CB-8042",
+    "tx": "TXN-2611150042",
+    "source": "1028 6128010",
+    "target": "0071 2891040",
+    "customer": "Lê Minh Khang",
+    "type": "CASH_OUT",
+    "amount": 24400000,
+    "before": 59400000,
+    "score": 91,
+    "priority": "Trung bình",
+    "status": 0,
+    "owner": null,
+    "created": "2026-11-14T18:21:54.099Z",
+    "updated": "2026-11-14T18:21:54.099Z",
+    "received": null,
+    "started": null,
+    "completed": null,
+    "due": "2026-11-15T18:21:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T18:21:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1041",
+    "alert": "CB-8041",
+    "tx": "TXN-2611150041",
+    "source": "1028 6128011",
+    "target": "0071 2891041",
+    "customer": "Phạm Thu Trang",
+    "type": "PAYMENT",
+    "amount": 81950000,
+    "before": 116950000,
+    "score": 73,
+    "priority": "Cao",
+    "status": 3,
+    "owner": "an",
+    "created": "2026-11-14T17:52:54.099Z",
+    "updated": "2026-11-14T17:52:54.099Z",
+    "received": "2026-11-14T17:57:54.099Z",
+    "started": "2026-11-14T18:02:54.099Z",
+    "completed": null,
+    "due": "2026-11-15T17:52:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": {
+      "from": "an",
+      "to": "sup",
+      "reason": "Giao dịch giá trị lớn cần giám sát xem xét.",
+      "time": "2026-11-14T18:07:54.099Z"
+    },
+    "awaiting": "sup",
+    "events": [
+      {
+        "time": "2026-11-14T17:52:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T17:57:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T18:12:54.099Z",
+        "by": "an",
+        "action": "Chờ người giám sát",
+        "from": 1,
+        "to": 3,
+        "note": "Chuyển đến Lê Hoàng Nam: giao dịch giá trị lớn."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1040",
+    "alert": "CB-8040",
+    "tx": "TXN-2611150040",
+    "source": "1028 6128012",
+    "target": "0071 2891042",
+    "customer": "Nguyễn Thanh Tùng",
+    "type": "CASH_IN",
+    "amount": 129300000,
+    "before": 164300000,
+    "score": 96,
+    "priority": "Khẩn cấp",
+    "status": 4,
+    "owner": "an",
+    "created": "2026-11-14T17:23:54.099Z",
+    "updated": "2026-11-14T17:23:54.099Z",
+    "received": "2026-11-14T17:28:54.099Z",
+    "started": "2026-11-14T17:33:54.099Z",
+    "completed": "2026-11-14T17:43:54.099Z",
+    "due": "2026-11-15T17:23:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [
+      {
+        "text": "Đã đối chiếu thông tin xác minh mô phỏng. Giao dịch phù hợp với yêu cầu của chủ tài khoản.",
+        "by": "an",
+        "time": "2026-11-14T17:43:54.099Z"
+      }
+    ],
+    "result": "Giao dịch hợp lệ",
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T17:23:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T17:28:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T17:43:54.099Z",
+        "by": "sup",
+        "action": "Đã xác nhận hợp lệ",
+        "from": 1,
+        "to": 4,
+        "note": "Đã đối chiếu xác minh mô phỏng."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1039",
+    "alert": "CB-8039",
+    "tx": "TXN-2611150039",
+    "source": "1028 6128004",
+    "target": "0071 2891043",
+    "customer": "Trần Ngọc Hà",
+    "type": "DEBIT",
+    "amount": 46100000,
+    "before": 81100000,
+    "score": 89,
+    "priority": "Trung bình",
+    "status": 5,
+    "owner": "bao",
+    "created": "2026-11-14T16:54:54.099Z",
+    "updated": "2026-11-14T16:54:54.099Z",
+    "received": "2026-11-14T16:59:54.099Z",
+    "started": "2026-11-14T17:04:54.099Z",
+    "completed": "2026-11-14T17:14:54.099Z",
+    "due": "2026-11-15T16:54:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [
+      {
+        "text": "Bằng chứng mô phỏng cho thấy giao dịch không được chủ tài khoản cho phép.",
+        "by": "bao",
+        "time": "2026-11-14T17:14:54.099Z"
+      }
+    ],
+    "result": "Gian lận được xác nhận (mô phỏng)",
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T16:54:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T16:59:54.099Z",
+        "by": "bao",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T17:14:54.099Z",
+        "by": "sup",
+        "action": "Đã xác nhận gian lận",
+        "from": 1,
+        "to": 5,
+        "note": "Đã ghi nhận cơ sở kết luận mô phỏng."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1038",
+    "alert": "CB-8038",
+    "tx": "TXN-2611150038",
+    "source": "1028 6128005",
+    "target": "0071 2891044",
+    "customer": "Lê Minh Khang",
+    "type": "TRANSFER",
+    "amount": 287000000,
+    "before": 322000000,
+    "score": 92,
+    "priority": "Cao",
+    "status": 1,
+    "owner": "an",
+    "created": "2026-11-14T16:25:54.099Z",
+    "updated": "2026-11-14T16:25:54.099Z",
+    "received": "2026-11-14T16:30:54.099Z",
+    "started": "2026-11-14T16:35:54.099Z",
+    "completed": null,
+    "due": "2026-11-15T16:25:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T16:25:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T16:30:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1037",
+    "alert": "CB-8037",
+    "tx": "TXN-2611150037",
+    "source": "1028 6128006",
+    "target": "0071 2891034",
+    "customer": "Phạm Thu Trang",
+    "type": "CASH_OUT",
+    "amount": 10975000,
+    "before": 45975000,
+    "score": 76,
+    "priority": "Cao",
+    "status": 2,
+    "owner": "an",
+    "created": "2026-11-14T15:56:54.099Z",
+    "updated": "2026-11-14T15:56:54.099Z",
+    "received": "2026-11-14T16:01:54.099Z",
+    "started": "2026-11-14T16:06:54.099Z",
+    "completed": null,
+    "due": "2026-11-15T15:56:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": "an",
+    "events": [
+      {
+        "time": "2026-11-14T15:56:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T16:01:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T16:16:54.099Z",
+        "by": "an",
+        "action": "Chờ bổ sung thông tin",
+        "from": 1,
+        "to": 2,
+        "note": "Cần bổ sung xác minh thiết bị (mô phỏng)."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1036",
+    "alert": "CB-8036",
+    "tx": "TXN-2611150036",
+    "source": "1028 6128007",
+    "target": "0071 2891035",
+    "customer": "Nguyễn Thanh Tùng",
+    "type": "PAYMENT",
+    "amount": 68600000,
+    "before": 103600000,
+    "score": 84,
+    "priority": "Khẩn cấp",
+    "status": 3,
+    "owner": "bao",
+    "created": "2026-11-14T15:27:54.099Z",
+    "updated": "2026-11-14T15:27:54.099Z",
+    "received": "2026-11-14T15:32:54.099Z",
+    "started": "2026-11-14T15:37:54.099Z",
+    "completed": null,
+    "due": "2026-11-15T15:27:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": {
+      "from": "bao",
+      "to": "sup",
+      "reason": "Giao dịch giá trị lớn cần giám sát xem xét.",
+      "time": "2026-11-14T15:42:54.099Z"
+    },
+    "awaiting": "sup",
+    "events": [
+      {
+        "time": "2026-11-14T15:27:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T15:32:54.099Z",
+        "by": "bao",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T15:47:54.099Z",
+        "by": "bao",
+        "action": "Chờ người giám sát",
+        "from": 1,
+        "to": 3,
+        "note": "Chuyển đến Lê Hoàng Nam: giao dịch giá trị lớn."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1035",
+    "alert": "CB-8035",
+    "tx": "TXN-2611150035",
+    "source": "1028 6128008",
+    "target": "0071 2891036",
+    "customer": "Trần Ngọc Hà",
+    "type": "CASH_IN",
+    "amount": 157300000,
+    "before": 192300000,
+    "score": 68,
+    "priority": "Cao",
+    "status": 4,
+    "owner": "an",
+    "created": "2026-11-14T14:58:54.099Z",
+    "updated": "2026-11-14T14:58:54.099Z",
+    "received": "2026-11-14T15:03:54.099Z",
+    "started": "2026-11-14T15:08:54.099Z",
+    "completed": "2026-11-14T15:18:54.099Z",
+    "due": "2026-11-15T14:58:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [
+      {
+        "text": "Đã đối chiếu thông tin xác minh mô phỏng. Giao dịch phù hợp với yêu cầu của chủ tài khoản.",
+        "by": "an",
+        "time": "2026-11-14T15:18:54.099Z"
+      }
+    ],
+    "result": "Giao dịch hợp lệ",
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T14:58:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T15:03:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T15:18:54.099Z",
+        "by": "sup",
+        "action": "Đã xác nhận hợp lệ",
+        "from": 1,
+        "to": 4,
+        "note": "Đã đối chiếu xác minh mô phỏng."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1034",
+    "alert": "CB-8034",
+    "tx": "TXN-2611150034",
+    "source": "1028 6128009",
+    "target": "0071 2891037",
+    "customer": "Lê Minh Khang",
+    "type": "DEBIT",
+    "amount": 25200000,
+    "before": 60200000,
+    "score": 91,
+    "priority": "Cao",
+    "status": 5,
+    "owner": "an",
+    "created": "2026-11-14T14:29:54.099Z",
+    "updated": "2026-11-14T14:29:54.099Z",
+    "received": "2026-11-14T14:34:54.099Z",
+    "started": "2026-11-14T14:39:54.099Z",
+    "completed": "2026-11-14T14:49:54.099Z",
+    "due": "2026-11-15T14:29:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [
+      {
+        "text": "Bằng chứng mô phỏng cho thấy giao dịch không được chủ tài khoản cho phép.",
+        "by": "an",
+        "time": "2026-11-14T14:49:54.099Z"
+      }
+    ],
+    "result": "Gian lận được xác nhận (mô phỏng)",
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T14:29:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T14:34:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T14:49:54.099Z",
+        "by": "sup",
+        "action": "Đã xác nhận gian lận",
+        "from": 1,
+        "to": 5,
+        "note": "Đã ghi nhận cơ sở kết luận mô phỏng."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1033",
+    "alert": "CB-8033",
+    "tx": "TXN-2611150033",
+    "source": "1028 6128010",
+    "target": "0071 2891038",
+    "customer": "Phạm Thu Trang",
+    "type": "TRANSFER",
+    "amount": 82750000,
+    "before": 117750000,
+    "score": 73,
+    "priority": "Trung bình",
+    "status": 1,
+    "owner": "bao",
+    "created": "2026-11-14T14:00:54.099Z",
+    "updated": "2026-11-14T14:00:54.099Z",
+    "received": "2026-11-14T14:05:54.099Z",
+    "started": "2026-11-14T14:10:54.099Z",
+    "completed": null,
+    "due": "2026-11-15T14:00:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T14:00:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T14:05:54.099Z",
+        "by": "bao",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1032",
+    "alert": "CB-8032",
+    "tx": "TXN-2611150032",
+    "source": "1028 6128011",
+    "target": "0071 2891039",
+    "customer": "Nguyễn Thanh Tùng",
+    "type": "CASH_OUT",
+    "amount": 130100000,
+    "before": 165100000,
+    "score": 96,
+    "priority": "Khẩn cấp",
+    "status": 2,
+    "owner": "an",
+    "created": "2026-11-14T13:31:54.099Z",
+    "updated": "2026-11-14T13:31:54.099Z",
+    "received": "2026-11-14T13:36:54.099Z",
+    "started": "2026-11-14T13:41:54.099Z",
+    "completed": null,
+    "due": "2026-11-15T13:31:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": "an",
+    "events": [
+      {
+        "time": "2026-11-14T13:31:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T13:36:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T13:51:54.099Z",
+        "by": "an",
+        "action": "Chờ bổ sung thông tin",
+        "from": 1,
+        "to": 2,
+        "note": "Cần bổ sung xác minh thiết bị (mô phỏng)."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1031",
+    "alert": "CB-8031",
+    "tx": "TXN-2611150031",
+    "source": "1028 6128012",
+    "target": "0071 2891040",
+    "customer": "Trần Ngọc Hà",
+    "type": "PAYMENT",
+    "amount": 46900000,
+    "before": 81900000,
+    "score": 89,
+    "priority": "Cao",
+    "status": 3,
+    "owner": "an",
+    "created": "2026-11-14T13:02:54.099Z",
+    "updated": "2026-11-14T13:02:54.099Z",
+    "received": "2026-11-14T13:07:54.099Z",
+    "started": "2026-11-14T13:12:54.099Z",
+    "completed": null,
+    "due": "2026-11-15T13:02:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": {
+      "from": "an",
+      "to": "sup",
+      "reason": "Giao dịch giá trị lớn cần giám sát xem xét.",
+      "time": "2026-11-14T13:17:54.099Z"
+    },
+    "awaiting": "sup",
+    "events": [
+      {
+        "time": "2026-11-14T13:02:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T13:07:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T13:22:54.099Z",
+        "by": "an",
+        "action": "Chờ người giám sát",
+        "from": 1,
+        "to": 3,
+        "note": "Chuyển đến Lê Hoàng Nam: giao dịch giá trị lớn."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1030",
+    "alert": "CB-8030",
+    "tx": "TXN-2611150030",
+    "source": "1028 6128004",
+    "target": "0071 2891041",
+    "customer": "Lê Minh Khang",
+    "type": "CASH_IN",
+    "amount": 287800000,
+    "before": 322800000,
+    "score": 92,
+    "priority": "Trung bình",
+    "status": 4,
+    "owner": "bao",
+    "created": "2026-11-14T12:33:54.099Z",
+    "updated": "2026-11-14T12:33:54.099Z",
+    "received": "2026-11-14T12:38:54.099Z",
+    "started": "2026-11-14T12:43:54.099Z",
+    "completed": "2026-11-14T12:53:54.099Z",
+    "due": "2026-11-15T12:33:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [
+      {
+        "text": "Đã đối chiếu thông tin xác minh mô phỏng. Giao dịch phù hợp với yêu cầu của chủ tài khoản.",
+        "by": "bao",
+        "time": "2026-11-14T12:53:54.099Z"
+      }
+    ],
+    "result": "Giao dịch hợp lệ",
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T12:33:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T12:38:54.099Z",
+        "by": "bao",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T12:53:54.099Z",
+        "by": "sup",
+        "action": "Đã xác nhận hợp lệ",
+        "from": 1,
+        "to": 4,
+        "note": "Đã đối chiếu xác minh mô phỏng."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1029",
+    "alert": "CB-8029",
+    "tx": "TXN-2611150029",
+    "source": "1028 6128005",
+    "target": "0071 2891042",
+    "customer": "Phạm Thu Trang",
+    "type": "DEBIT",
+    "amount": 11775000,
+    "before": 46775000,
+    "score": 76,
+    "priority": "Cao",
+    "status": 5,
+    "owner": "an",
+    "created": "2026-11-14T12:04:54.099Z",
+    "updated": "2026-11-14T12:04:54.099Z",
+    "received": "2026-11-14T12:09:54.099Z",
+    "started": "2026-11-14T12:14:54.099Z",
+    "completed": "2026-11-14T12:24:54.099Z",
+    "due": "2026-11-15T12:04:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [
+      {
+        "text": "Bằng chứng mô phỏng cho thấy giao dịch không được chủ tài khoản cho phép.",
+        "by": "an",
+        "time": "2026-11-14T12:24:54.099Z"
+      }
+    ],
+    "result": "Gian lận được xác nhận (mô phỏng)",
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T12:04:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T12:09:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T12:24:54.099Z",
+        "by": "sup",
+        "action": "Đã xác nhận gian lận",
+        "from": 1,
+        "to": 5,
+        "note": "Đã ghi nhận cơ sở kết luận mô phỏng."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1028",
+    "alert": "CB-8028",
+    "tx": "TXN-2611150028",
+    "source": "1028 6128006",
+    "target": "0071 2891043",
+    "customer": "Nguyễn Thanh Tùng",
+    "type": "TRANSFER",
+    "amount": 69400000,
+    "before": 104400000,
+    "score": 84,
+    "priority": "Khẩn cấp",
+    "status": 1,
+    "owner": "an",
+    "created": "2026-11-14T11:35:54.099Z",
+    "updated": "2026-11-14T11:35:54.099Z",
+    "received": "2026-11-14T11:40:54.099Z",
+    "started": "2026-11-14T11:45:54.099Z",
+    "completed": null,
+    "due": "2026-11-15T11:35:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T11:35:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T11:40:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1027",
+    "alert": "CB-8027",
+    "tx": "TXN-2611150027",
+    "source": "1028 6128007",
+    "target": "0071 2891044",
+    "customer": "Trần Ngọc Hà",
+    "type": "CASH_OUT",
+    "amount": 158100000,
+    "before": 193100000,
+    "score": 68,
+    "priority": "Trung bình",
+    "status": 2,
+    "owner": "bao",
+    "created": "2026-11-14T11:06:54.099Z",
+    "updated": "2026-11-14T11:06:54.099Z",
+    "received": "2026-11-14T11:11:54.099Z",
+    "started": "2026-11-14T11:16:54.099Z",
+    "completed": null,
+    "due": "2026-11-15T11:06:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": "bao",
+    "events": [
+      {
+        "time": "2026-11-14T11:06:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T11:11:54.099Z",
+        "by": "bao",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T11:26:54.099Z",
+        "by": "bao",
+        "action": "Chờ bổ sung thông tin",
+        "from": 1,
+        "to": 2,
+        "note": "Cần bổ sung xác minh thiết bị (mô phỏng)."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1026",
+    "alert": "CB-8026",
+    "tx": "TXN-2611150026",
+    "source": "1028 6128008",
+    "target": "0071 2891034",
+    "customer": "Lê Minh Khang",
+    "type": "PAYMENT",
+    "amount": 26000000,
+    "before": 61000000,
+    "score": 91,
+    "priority": "Cao",
+    "status": 3,
+    "owner": "an",
+    "created": "2026-11-14T10:37:54.099Z",
+    "updated": "2026-11-14T10:37:54.099Z",
+    "received": "2026-11-14T10:42:54.099Z",
+    "started": "2026-11-14T10:47:54.099Z",
+    "completed": null,
+    "due": "2026-11-15T10:37:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": {
+      "from": "an",
+      "to": "sup",
+      "reason": "Giao dịch giá trị lớn cần giám sát xem xét.",
+      "time": "2026-11-14T10:52:54.099Z"
+    },
+    "awaiting": "sup",
+    "events": [
+      {
+        "time": "2026-11-14T10:37:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T10:42:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T10:57:54.099Z",
+        "by": "an",
+        "action": "Chờ người giám sát",
+        "from": 1,
+        "to": 3,
+        "note": "Chuyển đến Lê Hoàng Nam: giao dịch giá trị lớn."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1025",
+    "alert": "CB-8025",
+    "tx": "TXN-2611150025",
+    "source": "1028 6128009",
+    "target": "0071 2891035",
+    "customer": "Phạm Thu Trang",
+    "type": "CASH_IN",
+    "amount": 83550000,
+    "before": 118550000,
+    "score": 73,
+    "priority": "Cao",
+    "status": 4,
+    "owner": "an",
+    "created": "2026-11-14T10:08:54.099Z",
+    "updated": "2026-11-14T10:08:54.099Z",
+    "received": "2026-11-14T10:13:54.099Z",
+    "started": "2026-11-14T10:18:54.099Z",
+    "completed": "2026-11-14T10:28:54.099Z",
+    "due": "2026-11-15T10:08:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [
+      {
+        "text": "Đã đối chiếu thông tin xác minh mô phỏng. Giao dịch phù hợp với yêu cầu của chủ tài khoản.",
+        "by": "an",
+        "time": "2026-11-14T10:28:54.099Z"
+      }
+    ],
+    "result": "Giao dịch hợp lệ",
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T10:08:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T10:13:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T10:28:54.099Z",
+        "by": "sup",
+        "action": "Đã xác nhận hợp lệ",
+        "from": 1,
+        "to": 4,
+        "note": "Đã đối chiếu xác minh mô phỏng."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1024",
+    "alert": "CB-8024",
+    "tx": "TXN-2611150024",
+    "source": "1028 6128010",
+    "target": "0071 2891036",
+    "customer": "Nguyễn Thanh Tùng",
+    "type": "DEBIT",
+    "amount": 130900000,
+    "before": 165900000,
+    "score": 96,
+    "priority": "Khẩn cấp",
+    "status": 5,
+    "owner": "bao",
+    "created": "2026-11-14T09:39:54.099Z",
+    "updated": "2026-11-14T09:39:54.099Z",
+    "received": "2026-11-14T09:44:54.099Z",
+    "started": "2026-11-14T09:49:54.099Z",
+    "completed": "2026-11-14T09:59:54.099Z",
+    "due": "2026-11-15T09:39:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [
+      {
+        "text": "Bằng chứng mô phỏng cho thấy giao dịch không được chủ tài khoản cho phép.",
+        "by": "bao",
+        "time": "2026-11-14T09:59:54.099Z"
+      }
+    ],
+    "result": "Gian lận được xác nhận (mô phỏng)",
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T09:39:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T09:44:54.099Z",
+        "by": "bao",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T09:59:54.099Z",
+        "by": "sup",
+        "action": "Đã xác nhận gian lận",
+        "from": 1,
+        "to": 5,
+        "note": "Đã ghi nhận cơ sở kết luận mô phỏng."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1023",
+    "alert": "CB-8023",
+    "tx": "TXN-2611150023",
+    "source": "1028 6128011",
+    "target": "0071 2891037",
+    "customer": "Trần Ngọc Hà",
+    "type": "TRANSFER",
+    "amount": 47700000,
+    "before": 82700000,
+    "score": 89,
+    "priority": "Cao",
+    "status": 1,
+    "owner": "an",
+    "created": "2026-11-14T09:10:54.099Z",
+    "updated": "2026-11-14T09:10:54.099Z",
+    "received": "2026-11-14T09:15:54.099Z",
+    "started": "2026-11-14T09:20:54.099Z",
+    "completed": null,
+    "due": "2026-11-15T09:10:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T09:10:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T09:15:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1022",
+    "alert": "CB-8022",
+    "tx": "TXN-2611150022",
+    "source": "1028 6128012",
+    "target": "0071 2891038",
+    "customer": "Lê Minh Khang",
+    "type": "CASH_OUT",
+    "amount": 288600000,
+    "before": 323600000,
+    "score": 92,
+    "priority": "Cao",
+    "status": 2,
+    "owner": "an",
+    "created": "2026-11-14T08:41:54.099Z",
+    "updated": "2026-11-14T08:41:54.099Z",
+    "received": "2026-11-14T08:46:54.099Z",
+    "started": "2026-11-14T08:51:54.099Z",
+    "completed": null,
+    "due": "2026-11-15T08:41:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": "an",
+    "events": [
+      {
+        "time": "2026-11-14T08:41:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T08:46:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T09:01:54.099Z",
+        "by": "an",
+        "action": "Chờ bổ sung thông tin",
+        "from": 1,
+        "to": 2,
+        "note": "Cần bổ sung xác minh thiết bị (mô phỏng)."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1021",
+    "alert": "CB-8021",
+    "tx": "TXN-2611150021",
+    "source": "1028 6128004",
+    "target": "0071 2891039",
+    "customer": "Phạm Thu Trang",
+    "type": "PAYMENT",
+    "amount": 12575000,
+    "before": 47575000,
+    "score": 76,
+    "priority": "Trung bình",
+    "status": 3,
+    "owner": "bao",
+    "created": "2026-11-14T08:12:54.099Z",
+    "updated": "2026-11-14T08:12:54.099Z",
+    "received": "2026-11-14T08:17:54.099Z",
+    "started": "2026-11-14T08:22:54.099Z",
+    "completed": null,
+    "due": "2026-11-15T08:12:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": {
+      "from": "bao",
+      "to": "sup",
+      "reason": "Giao dịch giá trị lớn cần giám sát xem xét.",
+      "time": "2026-11-14T08:27:54.099Z"
+    },
+    "awaiting": "sup",
+    "events": [
+      {
+        "time": "2026-11-14T08:12:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T08:17:54.099Z",
+        "by": "bao",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T08:32:54.099Z",
+        "by": "bao",
+        "action": "Chờ người giám sát",
+        "from": 1,
+        "to": 3,
+        "note": "Chuyển đến Lê Hoàng Nam: giao dịch giá trị lớn."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1020",
+    "alert": "CB-8020",
+    "tx": "TXN-2611150020",
+    "source": "1028 6128005",
+    "target": "0071 2891040",
+    "customer": "Nguyễn Thanh Tùng",
+    "type": "CASH_IN",
+    "amount": 70200000,
+    "before": 105200000,
+    "score": 84,
+    "priority": "Khẩn cấp",
+    "status": 4,
+    "owner": "an",
+    "created": "2026-11-14T07:43:54.099Z",
+    "updated": "2026-11-14T07:43:54.099Z",
+    "received": "2026-11-14T07:48:54.099Z",
+    "started": "2026-11-14T07:53:54.099Z",
+    "completed": "2026-11-14T08:03:54.099Z",
+    "due": "2026-11-15T07:43:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [
+      {
+        "text": "Đã đối chiếu thông tin xác minh mô phỏng. Giao dịch phù hợp với yêu cầu của chủ tài khoản.",
+        "by": "an",
+        "time": "2026-11-14T08:03:54.099Z"
+      }
+    ],
+    "result": "Giao dịch hợp lệ",
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T07:43:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T07:48:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T08:03:54.099Z",
+        "by": "sup",
+        "action": "Đã xác nhận hợp lệ",
+        "from": 1,
+        "to": 4,
+        "note": "Đã đối chiếu xác minh mô phỏng."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1019",
+    "alert": "CB-8019",
+    "tx": "TXN-2611150019",
+    "source": "1028 6128006",
+    "target": "0071 2891041",
+    "customer": "Trần Ngọc Hà",
+    "type": "DEBIT",
+    "amount": 158900000,
+    "before": 193900000,
+    "score": 68,
+    "priority": "Cao",
+    "status": 5,
+    "owner": "an",
+    "created": "2026-11-14T07:14:54.099Z",
+    "updated": "2026-11-14T07:14:54.099Z",
+    "received": "2026-11-14T07:19:54.099Z",
+    "started": "2026-11-14T07:24:54.099Z",
+    "completed": "2026-11-14T07:34:54.099Z",
+    "due": "2026-11-15T07:14:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [
+      {
+        "text": "Bằng chứng mô phỏng cho thấy giao dịch không được chủ tài khoản cho phép.",
+        "by": "an",
+        "time": "2026-11-14T07:34:54.099Z"
+      }
+    ],
+    "result": "Gian lận được xác nhận (mô phỏng)",
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T07:14:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T07:19:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T07:34:54.099Z",
+        "by": "sup",
+        "action": "Đã xác nhận gian lận",
+        "from": 1,
+        "to": 5,
+        "note": "Đã ghi nhận cơ sở kết luận mô phỏng."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1018",
+    "alert": "CB-8018",
+    "tx": "TXN-2611150018",
+    "source": "1028 6128007",
+    "target": "0071 2891042",
+    "customer": "Lê Minh Khang",
+    "type": "TRANSFER",
+    "amount": 26800000,
+    "before": 61800000,
+    "score": 91,
+    "priority": "Trung bình",
+    "status": 1,
+    "owner": "bao",
+    "created": "2026-11-14T06:45:54.099Z",
+    "updated": "2026-11-14T06:45:54.099Z",
+    "received": "2026-11-14T06:50:54.099Z",
+    "started": "2026-11-14T06:55:54.099Z",
+    "completed": null,
+    "due": "2026-11-15T06:45:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T06:45:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T06:50:54.099Z",
+        "by": "bao",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1017",
+    "alert": "CB-8017",
+    "tx": "TXN-2611150017",
+    "source": "1028 6128008",
+    "target": "0071 2891043",
+    "customer": "Phạm Thu Trang",
+    "type": "CASH_OUT",
+    "amount": 84350000,
+    "before": 119350000,
+    "score": 73,
+    "priority": "Cao",
+    "status": 2,
+    "owner": "an",
+    "created": "2026-11-14T06:16:54.099Z",
+    "updated": "2026-11-14T06:16:54.099Z",
+    "received": "2026-11-14T06:21:54.099Z",
+    "started": "2026-11-14T06:26:54.099Z",
+    "completed": null,
+    "due": "2026-11-15T06:16:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": "an",
+    "events": [
+      {
+        "time": "2026-11-14T06:16:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T06:21:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T06:36:54.099Z",
+        "by": "an",
+        "action": "Chờ bổ sung thông tin",
+        "from": 1,
+        "to": 2,
+        "note": "Cần bổ sung xác minh thiết bị (mô phỏng)."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1016",
+    "alert": "CB-8016",
+    "tx": "TXN-2611150016",
+    "source": "1028 6128009",
+    "target": "0071 2891044",
+    "customer": "Nguyễn Thanh Tùng",
+    "type": "PAYMENT",
+    "amount": 131700000,
+    "before": 166700000,
+    "score": 96,
+    "priority": "Khẩn cấp",
+    "status": 3,
+    "owner": "an",
+    "created": "2026-11-14T05:47:54.099Z",
+    "updated": "2026-11-14T05:47:54.099Z",
+    "received": "2026-11-14T05:52:54.099Z",
+    "started": "2026-11-14T05:57:54.099Z",
+    "completed": null,
+    "due": "2026-11-15T05:47:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": {
+      "from": "an",
+      "to": "sup",
+      "reason": "Giao dịch giá trị lớn cần giám sát xem xét.",
+      "time": "2026-11-14T06:02:54.099Z"
+    },
+    "awaiting": "sup",
+    "events": [
+      {
+        "time": "2026-11-14T05:47:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T05:52:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T06:07:54.099Z",
+        "by": "an",
+        "action": "Chờ người giám sát",
+        "from": 1,
+        "to": 3,
+        "note": "Chuyển đến Lê Hoàng Nam: giao dịch giá trị lớn."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1015",
+    "alert": "CB-8015",
+    "tx": "TXN-2611150015",
+    "source": "1028 6128010",
+    "target": "0071 2891034",
+    "customer": "Trần Ngọc Hà",
+    "type": "CASH_IN",
+    "amount": 48500000,
+    "before": 83500000,
+    "score": 89,
+    "priority": "Trung bình",
+    "status": 4,
+    "owner": "bao",
+    "created": "2026-11-14T05:18:54.099Z",
+    "updated": "2026-11-14T05:18:54.099Z",
+    "received": "2026-11-14T05:23:54.099Z",
+    "started": "2026-11-14T05:28:54.099Z",
+    "completed": "2026-11-14T05:38:54.099Z",
+    "due": "2026-11-15T05:18:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [
+      {
+        "text": "Đã đối chiếu thông tin xác minh mô phỏng. Giao dịch phù hợp với yêu cầu của chủ tài khoản.",
+        "by": "bao",
+        "time": "2026-11-14T05:38:54.099Z"
+      }
+    ],
+    "result": "Giao dịch hợp lệ",
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T05:18:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T05:23:54.099Z",
+        "by": "bao",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T05:38:54.099Z",
+        "by": "sup",
+        "action": "Đã xác nhận hợp lệ",
+        "from": 1,
+        "to": 4,
+        "note": "Đã đối chiếu xác minh mô phỏng."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1014",
+    "alert": "CB-8014",
+    "tx": "TXN-2611150014",
+    "source": "1028 6128011",
+    "target": "0071 2891035",
+    "customer": "Lê Minh Khang",
+    "type": "DEBIT",
+    "amount": 289400000,
+    "before": 324400000,
+    "score": 92,
+    "priority": "Cao",
+    "status": 5,
+    "owner": "an",
+    "created": "2026-11-14T04:49:54.099Z",
+    "updated": "2026-11-14T04:49:54.099Z",
+    "received": "2026-11-14T04:54:54.099Z",
+    "started": "2026-11-14T04:59:54.099Z",
+    "completed": "2026-11-14T05:09:54.099Z",
+    "due": "2026-11-15T04:49:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [
+      {
+        "text": "Bằng chứng mô phỏng cho thấy giao dịch không được chủ tài khoản cho phép.",
+        "by": "an",
+        "time": "2026-11-14T05:09:54.099Z"
+      }
+    ],
+    "result": "Gian lận được xác nhận (mô phỏng)",
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T04:49:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T04:54:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T05:09:54.099Z",
+        "by": "sup",
+        "action": "Đã xác nhận gian lận",
+        "from": 1,
+        "to": 5,
+        "note": "Đã ghi nhận cơ sở kết luận mô phỏng."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1013",
+    "alert": "CB-8013",
+    "tx": "TXN-2611150013",
+    "source": "1028 6128012",
+    "target": "0071 2891036",
+    "customer": "Phạm Thu Trang",
+    "type": "TRANSFER",
+    "amount": 13375000,
+    "before": 48375000,
+    "score": 76,
+    "priority": "Cao",
+    "status": 1,
+    "owner": "an",
+    "created": "2026-11-14T04:20:54.099Z",
+    "updated": "2026-11-14T04:20:54.099Z",
+    "received": "2026-11-14T04:25:54.099Z",
+    "started": "2026-11-14T04:30:54.099Z",
+    "completed": null,
+    "due": "2026-11-15T04:20:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T04:20:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T04:25:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1012",
+    "alert": "CB-8012",
+    "tx": "TXN-2611150012",
+    "source": "1028 6128004",
+    "target": "0071 2891037",
+    "customer": "Nguyễn Thanh Tùng",
+    "type": "CASH_OUT",
+    "amount": 71000000,
+    "before": 106000000,
+    "score": 84,
+    "priority": "Khẩn cấp",
+    "status": 2,
+    "owner": "bao",
+    "created": "2026-11-14T03:51:54.099Z",
+    "updated": "2026-11-14T03:51:54.099Z",
+    "received": "2026-11-14T03:56:54.099Z",
+    "started": "2026-11-14T04:01:54.099Z",
+    "completed": null,
+    "due": "2026-11-15T03:51:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": "bao",
+    "events": [
+      {
+        "time": "2026-11-14T03:51:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T03:56:54.099Z",
+        "by": "bao",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T04:11:54.099Z",
+        "by": "bao",
+        "action": "Chờ bổ sung thông tin",
+        "from": 1,
+        "to": 2,
+        "note": "Cần bổ sung xác minh thiết bị (mô phỏng)."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1011",
+    "alert": "CB-8011",
+    "tx": "TXN-2611150011",
+    "source": "1028 6128005",
+    "target": "0071 2891038",
+    "customer": "Trần Ngọc Hà",
+    "type": "PAYMENT",
+    "amount": 159700000,
+    "before": 194700000,
+    "score": 68,
+    "priority": "Cao",
+    "status": 3,
+    "owner": "an",
+    "created": "2026-11-14T03:22:54.099Z",
+    "updated": "2026-11-14T03:22:54.099Z",
+    "received": "2026-11-14T03:27:54.099Z",
+    "started": "2026-11-14T03:32:54.099Z",
+    "completed": null,
+    "due": "2026-11-15T03:22:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": {
+      "from": "an",
+      "to": "sup",
+      "reason": "Giao dịch giá trị lớn cần giám sát xem xét.",
+      "time": "2026-11-14T03:37:54.099Z"
+    },
+    "awaiting": "sup",
+    "events": [
+      {
+        "time": "2026-11-14T03:22:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T03:27:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T03:42:54.099Z",
+        "by": "an",
+        "action": "Chờ người giám sát",
+        "from": 1,
+        "to": 3,
+        "note": "Chuyển đến Lê Hoàng Nam: giao dịch giá trị lớn."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1010",
+    "alert": "CB-8010",
+    "tx": "TXN-2611150010",
+    "source": "1028 6128006",
+    "target": "0071 2891039",
+    "customer": "Lê Minh Khang",
+    "type": "CASH_IN",
+    "amount": 27600000,
+    "before": 62600000,
+    "score": 91,
+    "priority": "Cao",
+    "status": 4,
+    "owner": "an",
+    "created": "2026-11-14T02:53:54.099Z",
+    "updated": "2026-11-14T02:53:54.099Z",
+    "received": "2026-11-14T02:58:54.099Z",
+    "started": "2026-11-14T03:03:54.099Z",
+    "completed": "2026-11-14T03:13:54.099Z",
+    "due": "2026-11-15T02:53:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [
+      {
+        "text": "Đã đối chiếu thông tin xác minh mô phỏng. Giao dịch phù hợp với yêu cầu của chủ tài khoản.",
+        "by": "an",
+        "time": "2026-11-14T03:13:54.099Z"
+      }
+    ],
+    "result": "Giao dịch hợp lệ",
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T02:53:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T02:58:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T03:13:54.099Z",
+        "by": "sup",
+        "action": "Đã xác nhận hợp lệ",
+        "from": 1,
+        "to": 4,
+        "note": "Đã đối chiếu xác minh mô phỏng."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1009",
+    "alert": "CB-8009",
+    "tx": "TXN-2611150009",
+    "source": "1028 6128007",
+    "target": "0071 2891040",
+    "customer": "Phạm Thu Trang",
+    "type": "DEBIT",
+    "amount": 85150000,
+    "before": 120150000,
+    "score": 73,
+    "priority": "Trung bình",
+    "status": 5,
+    "owner": "bao",
+    "created": "2026-11-14T02:24:54.099Z",
+    "updated": "2026-11-14T02:24:54.099Z",
+    "received": "2026-11-14T02:29:54.099Z",
+    "started": "2026-11-14T02:34:54.099Z",
+    "completed": "2026-11-14T02:44:54.099Z",
+    "due": "2026-11-15T02:24:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [
+      {
+        "text": "Bằng chứng mô phỏng cho thấy giao dịch không được chủ tài khoản cho phép.",
+        "by": "bao",
+        "time": "2026-11-14T02:44:54.099Z"
+      }
+    ],
+    "result": "Gian lận được xác nhận (mô phỏng)",
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T02:24:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T02:29:54.099Z",
+        "by": "bao",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T02:44:54.099Z",
+        "by": "sup",
+        "action": "Đã xác nhận gian lận",
+        "from": 1,
+        "to": 5,
+        "note": "Đã ghi nhận cơ sở kết luận mô phỏng."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1008",
+    "alert": "CB-8008",
+    "tx": "TXN-2611150008",
+    "source": "1028 6128008",
+    "target": "0071 2891041",
+    "customer": "Nguyễn Thanh Tùng",
+    "type": "TRANSFER",
+    "amount": 132500000,
+    "before": 167500000,
+    "score": 96,
+    "priority": "Khẩn cấp",
+    "status": 1,
+    "owner": "an",
+    "created": "2026-11-14T01:55:54.099Z",
+    "updated": "2026-11-14T01:55:54.099Z",
+    "received": "2026-11-14T02:00:54.099Z",
+    "started": "2026-11-14T02:05:54.099Z",
+    "completed": null,
+    "due": "2026-11-15T01:55:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T01:55:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T02:00:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1007",
+    "alert": "CB-8007",
+    "tx": "TXN-2611150007",
+    "source": "1028 6128009",
+    "target": "0071 2891042",
+    "customer": "Trần Ngọc Hà",
+    "type": "CASH_OUT",
+    "amount": 49300000,
+    "before": 84300000,
+    "score": 89,
+    "priority": "Cao",
+    "status": 2,
+    "owner": "an",
+    "created": "2026-11-14T01:26:54.099Z",
+    "updated": "2026-11-14T01:26:54.099Z",
+    "received": "2026-11-14T01:31:54.099Z",
+    "started": "2026-11-14T01:36:54.099Z",
+    "completed": null,
+    "due": "2026-11-15T01:26:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": "an",
+    "events": [
+      {
+        "time": "2026-11-14T01:26:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T01:31:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T01:46:54.099Z",
+        "by": "an",
+        "action": "Chờ bổ sung thông tin",
+        "from": 1,
+        "to": 2,
+        "note": "Cần bổ sung xác minh thiết bị (mô phỏng)."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1006",
+    "alert": "CB-8006",
+    "tx": "TXN-2611150006",
+    "source": "1028 6128010",
+    "target": "0071 2891043",
+    "customer": "Lê Minh Khang",
+    "type": "PAYMENT",
+    "amount": 290200000,
+    "before": 325200000,
+    "score": 92,
+    "priority": "Trung bình",
+    "status": 3,
+    "owner": "bao",
+    "created": "2026-11-14T00:57:54.099Z",
+    "updated": "2026-11-14T00:57:54.099Z",
+    "received": "2026-11-14T01:02:54.099Z",
+    "started": "2026-11-14T01:07:54.099Z",
+    "completed": null,
+    "due": "2026-11-15T00:57:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": {
+      "from": "bao",
+      "to": "sup",
+      "reason": "Giao dịch giá trị lớn cần giám sát xem xét.",
+      "time": "2026-11-14T01:12:54.099Z"
+    },
+    "awaiting": "sup",
+    "events": [
+      {
+        "time": "2026-11-14T00:57:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T01:02:54.099Z",
+        "by": "bao",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T01:17:54.099Z",
+        "by": "bao",
+        "action": "Chờ người giám sát",
+        "from": 1,
+        "to": 3,
+        "note": "Chuyển đến Lê Hoàng Nam: giao dịch giá trị lớn."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1005",
+    "alert": "CB-8005",
+    "tx": "TXN-2611150005",
+    "source": "1028 6128011",
+    "target": "0071 2891044",
+    "customer": "Phạm Thu Trang",
+    "type": "CASH_IN",
+    "amount": 14175000,
+    "before": 49175000,
+    "score": 76,
+    "priority": "Cao",
+    "status": 4,
+    "owner": "an",
+    "created": "2026-11-14T00:28:54.099Z",
+    "updated": "2026-11-14T00:28:54.099Z",
+    "received": "2026-11-14T00:33:54.099Z",
+    "started": "2026-11-14T00:38:54.099Z",
+    "completed": "2026-11-14T00:48:54.099Z",
+    "due": "2026-11-15T00:28:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [
+      {
+        "text": "Đã đối chiếu thông tin xác minh mô phỏng. Giao dịch phù hợp với yêu cầu của chủ tài khoản.",
+        "by": "an",
+        "time": "2026-11-14T00:48:54.099Z"
+      }
+    ],
+    "result": "Giao dịch hợp lệ",
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T00:28:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T00:33:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T00:48:54.099Z",
+        "by": "sup",
+        "action": "Đã xác nhận hợp lệ",
+        "from": 1,
+        "to": 4,
+        "note": "Đã đối chiếu xác minh mô phỏng."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1004",
+    "alert": "CB-8004",
+    "tx": "TXN-2611150004",
+    "source": "1028 6128012",
+    "target": "0071 2891034",
+    "customer": "Nguyễn Thanh Tùng",
+    "type": "DEBIT",
+    "amount": 71800000,
+    "before": 106800000,
+    "score": 84,
+    "priority": "Khẩn cấp",
+    "status": 5,
+    "owner": "an",
+    "created": "2026-11-13T23:59:54.099Z",
+    "updated": "2026-11-13T23:59:54.099Z",
+    "received": "2026-11-14T00:04:54.099Z",
+    "started": "2026-11-14T00:09:54.099Z",
+    "completed": "2026-11-14T00:19:54.099Z",
+    "due": "2026-11-14T23:59:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [
+      {
+        "text": "Bằng chứng mô phỏng cho thấy giao dịch không được chủ tài khoản cho phép.",
+        "by": "an",
+        "time": "2026-11-14T00:19:54.099Z"
+      }
+    ],
+    "result": "Gian lận được xác nhận (mô phỏng)",
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-13T23:59:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-14T00:04:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-14T00:19:54.099Z",
+        "by": "sup",
+        "action": "Đã xác nhận gian lận",
+        "from": 1,
+        "to": 5,
+        "note": "Đã ghi nhận cơ sở kết luận mô phỏng."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1003",
+    "alert": "CB-8003",
+    "tx": "TXN-2611150003",
+    "source": "1028 6128004",
+    "target": "0071 2891035",
+    "customer": "Trần Ngọc Hà",
+    "type": "TRANSFER",
+    "amount": 160500000,
+    "before": 195500000,
+    "score": 68,
+    "priority": "Trung bình",
+    "status": 1,
+    "owner": "bao",
+    "created": "2026-11-13T23:30:54.099Z",
+    "updated": "2026-11-13T23:30:54.099Z",
+    "received": "2026-11-13T23:35:54.099Z",
+    "started": "2026-11-13T23:40:54.099Z",
+    "completed": null,
+    "due": "2026-11-14T23:30:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-13T23:30:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-13T23:35:54.099Z",
+        "by": "bao",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1002",
+    "alert": "CB-8002",
+    "tx": "TXN-2611150002",
+    "source": "1028 6128005",
+    "target": "0071 2891036",
+    "customer": "Lê Minh Khang",
+    "type": "CASH_OUT",
+    "amount": 28400000,
+    "before": 63400000,
+    "score": 91,
+    "priority": "Cao",
+    "status": 2,
+    "owner": "an",
+    "created": "2026-11-13T23:01:54.099Z",
+    "updated": "2026-11-13T23:01:54.099Z",
+    "received": "2026-11-13T23:06:54.099Z",
+    "started": "2026-11-13T23:11:54.099Z",
+    "completed": null,
+    "due": "2026-11-14T23:01:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": "an",
+    "events": [
+      {
+        "time": "2026-11-13T23:01:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-13T23:06:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-13T23:21:54.099Z",
+        "by": "an",
+        "action": "Chờ bổ sung thông tin",
+        "from": 1,
+        "to": 2,
+        "note": "Cần bổ sung xác minh thiết bị (mô phỏng)."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1001",
+    "alert": "CB-8001",
+    "tx": "TXN-2611150001",
+    "source": "1028 6128006",
+    "target": "0071 2891037",
+    "customer": "Phạm Thu Trang",
+    "type": "PAYMENT",
+    "amount": 85950000,
+    "before": 120950000,
+    "score": 73,
+    "priority": "Cao",
+    "status": 3,
+    "owner": "an",
+    "created": "2026-11-13T22:32:54.099Z",
+    "updated": "2026-11-13T22:32:54.099Z",
+    "received": "2026-11-13T22:37:54.099Z",
+    "started": "2026-11-13T22:42:54.099Z",
+    "completed": null,
+    "due": "2026-11-14T22:32:54.099Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": {
+      "from": "an",
+      "to": "sup",
+      "reason": "Giao dịch giá trị lớn cần giám sát xem xét.",
+      "time": "2026-11-13T22:47:54.099Z"
+    },
+    "awaiting": "sup",
+    "events": [
+      {
+        "time": "2026-11-13T22:32:54.099Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Điểm rủi ro mô phỏng vượt ngưỡng 65."
+      },
+      {
+        "time": "2026-11-13T22:37:54.099Z",
+        "by": "an",
+        "action": "Tiếp nhận hồ sơ",
+        "from": 0,
+        "to": 1,
+        "note": "Đã nhận và bắt đầu điều tra."
+      },
+      {
+        "time": "2026-11-13T22:52:54.099Z",
+        "by": "an",
+        "action": "Chờ người giám sát",
+        "from": 1,
+        "to": 3,
+        "note": "Chuyển đến Lê Hoàng Nam: giao dịch giá trị lớn."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1101",
+    "alert": "CB-8101",
+    "tx": "TXN-2611150101",
+    "source": "1028 6129101",
+    "target": "0071 2892101",
+    "customer": "Đặng Minh Châu",
+    "type": "TRANSFER",
+    "amount": 185000000,
+    "before": 227000000,
+    "score": 94,
+    "priority": "Khẩn cấp",
+    "status": 0,
+    "owner": "sup",
+    "created": "2026-11-14T21:25:54.100Z",
+    "updated": "2026-11-14T21:26:54.100Z",
+    "received": null,
+    "started": null,
+    "completed": null,
+    "due": "2026-11-15T21:25:54.100Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T21:25:54.100Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Giao dịch mô phỏng được bổ sung để trình diễn xử lý theo người phụ trách."
+      },
+      {
+        "time": "2026-11-14T21:26:54.100Z",
+        "by": "sup",
+        "action": "Phân công hồ sơ",
+        "from": 0,
+        "to": 0,
+        "note": "Chỉ định Lê Hoàng Nam chịu trách nhiệm điều tra."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1102",
+    "alert": "CB-8102",
+    "tx": "TXN-2611150102",
+    "source": "1028 6129102",
+    "target": "0071 2892102",
+    "customer": "Vũ Hoàng Long",
+    "type": "CASH_OUT",
+    "amount": 67500000,
+    "before": 109500000,
+    "score": 91,
+    "priority": "Cao",
+    "status": 1,
+    "owner": "sup",
+    "created": "2026-11-14T21:13:54.101Z",
+    "updated": "2026-11-14T21:15:54.101Z",
+    "received": "2026-11-14T21:15:54.101Z",
+    "started": "2026-11-14T21:15:54.101Z",
+    "completed": null,
+    "due": "2026-11-15T21:13:54.101Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T21:13:54.101Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Giao dịch mô phỏng được bổ sung để trình diễn xử lý theo người phụ trách."
+      },
+      {
+        "time": "2026-11-14T21:14:54.101Z",
+        "by": "sup",
+        "action": "Phân công hồ sơ",
+        "from": 0,
+        "to": 0,
+        "note": "Chỉ định Lê Hoàng Nam chịu trách nhiệm điều tra."
+      },
+      {
+        "time": "2026-11-14T21:15:54.101Z",
+        "by": "sup",
+        "action": "Tiếp nhận và bắt đầu điều tra",
+        "from": 0,
+        "to": 1,
+        "note": "Đã tiếp nhận hồ sơ được phân công."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1103",
+    "alert": "CB-8103",
+    "tx": "TXN-2611150103",
+    "source": "1028 6129103",
+    "target": "0071 2892103",
+    "customer": "Ngô Thảo Linh",
+    "type": "TRANSFER",
+    "amount": 92000000,
+    "before": 134000000,
+    "score": 88,
+    "priority": "Cao",
+    "status": 0,
+    "owner": "an",
+    "created": "2026-11-14T21:01:54.101Z",
+    "updated": "2026-11-14T21:02:54.101Z",
+    "received": null,
+    "started": null,
+    "completed": null,
+    "due": "2026-11-15T21:01:54.101Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T21:01:54.101Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Giao dịch mô phỏng được bổ sung để trình diễn xử lý theo người phụ trách."
+      },
+      {
+        "time": "2026-11-14T21:02:54.101Z",
+        "by": "sup",
+        "action": "Phân công hồ sơ",
+        "from": 0,
+        "to": 0,
+        "note": "Chỉ định Nguyễn Minh Anh chịu trách nhiệm điều tra."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1104",
+    "alert": "CB-8104",
+    "tx": "TXN-2611150104",
+    "source": "1028 6129104",
+    "target": "0071 2892104",
+    "customer": "Đỗ Tuấn Kiệt",
+    "type": "CASH_OUT",
+    "amount": 243000000,
+    "before": 285000000,
+    "score": 85,
+    "priority": "Khẩn cấp",
+    "status": 1,
+    "owner": "an",
+    "created": "2026-11-14T20:49:54.101Z",
+    "updated": "2026-11-14T20:51:54.101Z",
+    "received": "2026-11-14T20:51:54.101Z",
+    "started": "2026-11-14T20:51:54.101Z",
+    "completed": null,
+    "due": "2026-11-15T20:49:54.101Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T20:49:54.101Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Giao dịch mô phỏng được bổ sung để trình diễn xử lý theo người phụ trách."
+      },
+      {
+        "time": "2026-11-14T20:50:54.101Z",
+        "by": "sup",
+        "action": "Phân công hồ sơ",
+        "from": 0,
+        "to": 0,
+        "note": "Chỉ định Nguyễn Minh Anh chịu trách nhiệm điều tra."
+      },
+      {
+        "time": "2026-11-14T20:51:54.101Z",
+        "by": "an",
+        "action": "Tiếp nhận và bắt đầu điều tra",
+        "from": 0,
+        "to": 1,
+        "note": "Đã tiếp nhận hồ sơ được phân công."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1105",
+    "alert": "CB-8105",
+    "tx": "TXN-2611150105",
+    "source": "1028 6129105",
+    "target": "0071 2892105",
+    "customer": "Bùi Ngọc Mai",
+    "type": "TRANSFER",
+    "amount": 38500000,
+    "before": 80500000,
+    "score": 82,
+    "priority": "Cao",
+    "status": 0,
+    "owner": "bao",
+    "created": "2026-11-14T20:37:54.101Z",
+    "updated": "2026-11-14T20:38:54.101Z",
+    "received": null,
+    "started": null,
+    "completed": null,
+    "due": "2026-11-15T20:37:54.101Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T20:37:54.101Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Giao dịch mô phỏng được bổ sung để trình diễn xử lý theo người phụ trách."
+      },
+      {
+        "time": "2026-11-14T20:38:54.101Z",
+        "by": "sup",
+        "action": "Phân công hồ sơ",
+        "from": 0,
+        "to": 0,
+        "note": "Chỉ định Trần Quốc Bảo chịu trách nhiệm điều tra."
+      }
+    ]
+  },
+  {
+    "id": "HS-2026-1106",
+    "alert": "CB-8106",
+    "tx": "TXN-2611150106",
+    "source": "1028 6129106",
+    "target": "0071 2892106",
+    "customer": "Hoàng Anh Tú",
+    "type": "CASH_OUT",
+    "amount": 126000000,
+    "before": 168000000,
+    "score": 79,
+    "priority": "Cao",
+    "status": 1,
+    "owner": "bao",
+    "created": "2026-11-14T20:25:54.101Z",
+    "updated": "2026-11-14T20:27:54.101Z",
+    "received": "2026-11-14T20:27:54.101Z",
+    "started": "2026-11-14T20:27:54.101Z",
+    "completed": null,
+    "due": "2026-11-15T20:25:54.101Z",
+    "checks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": [],
+    "result": null,
+    "escalation": null,
+    "awaiting": null,
+    "events": [
+      {
+        "time": "2026-11-14T20:25:54.101Z",
+        "by": "system",
+        "action": "Tạo cảnh báo tự động",
+        "from": null,
+        "to": 0,
+        "note": "Giao dịch mô phỏng được bổ sung để trình diễn xử lý theo người phụ trách."
+      },
+      {
+        "time": "2026-11-14T20:26:54.101Z",
+        "by": "sup",
+        "action": "Phân công hồ sơ",
+        "from": 0,
+        "to": 0,
+        "note": "Chỉ định Trần Quốc Bảo chịu trách nhiệm điều tra."
+      },
+      {
+        "time": "2026-11-14T20:27:54.101Z",
+        "by": "bao",
+        "action": "Tiếp nhận và bắt đầu điều tra",
+        "from": 0,
+        "to": 1,
+        "note": "Đã tiếp nhận hồ sơ được phân công."
+      }
+    ]
+  }
+]
