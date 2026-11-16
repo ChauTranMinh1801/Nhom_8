@@ -1,0 +1,52 @@
+{
+  "research_question": "RQ3",
+  "selected_algorithm": "XGBoost",
+  "selected_imbalance_strategy": "Class_Weight",
+  "preprocessing_family": "Tree",
+  "feature_set": "Full_Features",
+  "selection_dataset": "Validation_20pct",
+  "selection_metric": "F1",
+  "selection_rule": "Maximum_Validation_F1",
+  "tie_break_rule": "Largest_observed_threshold_among_equal_maximum_F1",
+  "reference_threshold": 0.5,
+  "selected_threshold": 0.9941363334655762,
+  "validation_metrics": {
+    "Accuracy": 0.9999944991214311,
+    "Precision": 1.0,
+    "Recall": 0.995739500912964,
+    "F1": 0.9978652028057334,
+    "AP": 0.9981964243428759,
+    "ROC_AUC": 0.9998445073937651,
+    "TP": 1636,
+    "FP": 0,
+    "FN": 7,
+    "TN": 1270881,
+    "Alerts": 1636,
+    "Alert_Rate": 0.0012856339055294832
+  },
+  "reference_metrics": {
+    "Precision": 0.9927184466019418,
+    "Recall": 0.995739500912964,
+    "F1": 0.994226678821027,
+    "TP": 1636,
+    "FP": 12,
+    "FN": 7,
+    "Alerts": 1648
+  },
+  "model_path": "/content/drive/Shareddrives/M(anchine) L(earning)/Output/ML_Experiments/RQ2/models/Class_Weight.joblib",
+  "preprocessor_path": "/content/drive/Shareddrives/M(anchine) L(earning)/Output/Preprocessing/preprocessor_Tree.joblib",
+  "validation_scores_path": "/content/drive/Shareddrives/M(anchine) L(earning)/Output/ML_Experiments/RQ2/results/Class_Weight_validation_scores.parquet",
+  "target_column": "isFraud",
+  "random_state": 42,
+  "prediction_rule": "Flag transaction if fraud_score >= selected_threshold",
+  "system_scope": "Post-Transaction Fraud Detection and Review Support",
+  "test_used_for_selection": false,
+  "limitations": [
+    "Threshold optimized on Validation only.",
+    "Validation metrics are not independent test estimates.",
+    "Fraud scores are not assumed to be calibrated probabilities.",
+    "False alerts approximate potential unnecessary review cases.",
+    "Actual bank staff workload reduction was not measured.",
+    "Performance on unseen transactions requires held-out test evaluation."
+  ]
+}
