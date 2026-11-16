@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ui version="4.0">
+  <class>TransactionDetails</class>
+  <widget class="QDialog" name="TransactionDetails">
+    <property name="windowTitle">
+      <string>Chi tiết dự đoán</string>
+    </property>
+    <property name="minimumSize">
+      <size>
+        <width>580</width>
+        <height>620</height>
+      </size>
+    </property>
+    <property name="styleSheet">
+      <string>QDialog{background:#F2F9F3;} QLabel{font-family:Arial;font-size:13px;color:#24405B;} QLineEdit,QComboBox{background:white;border:1px solid #CDD9D7;border-radius:5px;padding:7px;} QPushButton{background:#279E87;color:white;border:none;padding:10px 20px;border-radius:5px;}</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+        <layout class="QFormLayout" name="formLayout">
+          <item row="0" column="0">
+            <widget class="QLabel" name="transaction_idCaption">
+              <property name="text">
+                <string>Mã giao dịch</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="0" column="1">
+            <widget class="QLabel" name="transaction_idValue">
+              <property name="text">
+                <string>—</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="1" column="0">
+            <widget class="QLabel" name="typeCaption">
+              <property name="text">
+                <string>Loại giao dịch</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="1" column="1">
+            <widget class="QLabel" name="typeValue">
+              <property name="text">
+                <string>—</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="2" column="0">
+            <widget class="QLabel" name="stepCaption">
+              <property name="text">
+                <string>Step</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="2" column="1">
+            <widget class="QLabel" name="stepValue">
+              <property name="text">
+                <string>—</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="3" column="0">
+            <widget class="QLabel" name="amountCaption">
+              <property name="text">
+                <string>Số tiền</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="3" column="1">
+            <widget class="QLabel" name="amountValue">
+              <property name="text">
+                <string>—</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="4" column="0">
+            <widget class="QLabel" name="oldbalance_orgCaption">
+              <property name="text">
+                <string>Số dư nguồn trước</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="4" column="1">
+            <widget class="QLabel" name="oldbalance_orgValue">
+              <property name="text">
+                <string>—</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="5" column="0">
+            <widget class="QLabel" name="newbalance_origCaption">
+              <property name="text">
+                <string>Số dư nguồn sau</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="5" column="1">
+            <widget class="QLabel" name="newbalance_origValue">
+              <property name="text">
+                <string>—</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="6" column="0">
+            <widget class="QLabel" name="oldbalance_destCaption">
+              <property name="text">
+                <string>Số dư đích trước</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="6" column="1">
+            <widget class="QLabel" name="oldbalance_destValue">
+              <property name="text">
+                <string>—</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="7" column="0">
+            <widget class="QLabel" name="newbalance_destCaption">
+              <property name="text">
+                <string>Số dư đích sau</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="7" column="1">
+            <widget class="QLabel" name="newbalance_destValue">
+              <property name="text">
+                <string>—</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="8" column="0">
+            <widget class="QLabel" name="fraud_scoreCaption">
+              <property name="text">
+                <string>Điểm Fraud</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="8" column="1">
+            <widget class="QLabel" name="fraud_scoreValue">
+              <property name="text">
+                <string>—</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="9" column="0">
+            <widget class="QLabel" name="thresholdCaption">
+              <property name="text">
+                <string>Ngưỡng phân loại</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="9" column="1">
+            <widget class="QLabel" name="thresholdValue">
+              <property name="text">
+                <string>—</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="10" column="0">
+            <widget class="QLabel" name="predictionCaption">
+              <property name="text">
+                <string>Kết quả dự đoán</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="10" column="1">
+            <widget class="QLabel" name="predictionValue">
+              <property name="text">
+                <string>—</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="11" column="0">
+            <widget class="QLabel" name="created_atCaption">
+              <property name="text">
+                <string>Thời gian</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="11" column="1">
+            <widget class="QLabel" name="created_atValue">
+              <property name="text">
+                <string>—</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="12" column="0">
+            <widget class="QLabel" name="checked_byCaption">
+              <property name="text">
+                <string>Checked By</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+          <item row="12" column="1">
+            <widget class="QLabel" name="checked_byValue">
+              <property name="text">
+                <string>—</string>
+              </property>
+              <property name="textFormat">
+                <enum>Qt::PlainText</enum>
+              </property>
+            </widget>
+          </item>
+        </layout>
+      </item>
+      <item>
+        <layout class="QHBoxLayout" name="buttonLayout">
+          <item>
+            <widget class="QPushButton" name="closeButton">
+              <property name="text">
+                <string>Đóng</string>
+              </property>
+            </widget>
+          </item>
+        </layout>
+      </item>
+    </layout>
+  </widget>
+  <resources />
+  <connections />
+</ui>

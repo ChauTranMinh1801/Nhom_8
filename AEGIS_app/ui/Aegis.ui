@@ -1,0 +1,3046 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ui version="4.0">
+  <class>MainWindow</class>
+  <widget class="QMainWindow" name="aegiswindow">
+    <property name="geometry">
+      <rect>
+        <x>2</x>
+        <y>2</y>
+        <width>1360</width>
+        <height>860</height>
+      </rect>
+    </property>
+    <property name="windowTitle">
+      <string>AEGIS — Fraud Operations</string>
+    </property>
+    <property name="styleSheet">
+      <string>
+QWidget {font-family:Arial;font-size:13px;color:#17211B;}
+QMainWindow, #rootStack, #background {background:#F2F9F3;}
+QFrame#sidebar {background:#E3F398;}
+QFrame#topbar {background:#222222;}
+QFrame#card {background:white;border:1px solid #DAE3DE;border-radius:7px;}
+QFrame#formPanel {background:#CDD9D7;border-radius:13px;}
+QPushButton {background:#279E87;color:white;border:none;border-radius:7px;padding:10px 16px;}
+QPushButton:hover {background:#208873;}
+QPushButton:pressed {background:#00595C;}
+QPushButton#dashboardButton, QPushButton#lookupButton, QPushButton#recordsButton {background:transparent;color:#17211B;text-align:left;padding:13px 16px;border-radius:4px;}
+QPushButton#dashboardButton:hover, QPushButton#lookupButton:hover, QPushButton#recordsButton:hover {background:#D1DF8A;}
+QPushButton#dashboardButton:checked, QPushButton#lookupButton:checked, QPushButton#recordsButton:checked {background:#B4BF96;}
+QPushButton#logoutButton {background:#00595C;border-radius:22px;}
+QPushButton#successClearButton, QPushButton#failClearButton {background:#7B7B7B;}
+QPushButton#loginButton {background:black;color:#E3F398;font-size:22px;font-weight:bold;}
+QPushButton#resetFiltersButton {background:transparent;color:#8A99AA;padding:7px 2px;}
+QLineEdit {background:white;border:none;border-radius:11px;padding:9px 12px;min-height:25px;}
+QLineEdit:focus {border:1px solid #279E87;}
+QLineEdit#usernameEdit, QLineEdit#passwordEdit {border:1px solid #222222;border-radius:8px;padding:15px;font-size:16px;}
+QLineEdit#globalSearchEdit {border-radius:2px;min-height:12px;padding:5px 10px;font-size:12px;}
+QLineEdit#idFilterEdit {border:1px solid #00595C;border-radius:8px;font-size:11px;}
+QComboBox {background:#F2F9F3;border:1px solid #00595C;border-radius:8px;padding:8px;font-size:11px;}
+QComboBox::drop-down {border:none;width:18px;}
+QComboBox QAbstractItemView {background:white;selection-background-color:#DCEBCE;selection-color:#17211B;}
+QTableWidget {background:white;border:none;border-radius:9px;color:#344F69;font-size:10px;}
+QTableWidget::item {border-bottom:1px solid #EDF1F0;padding:5px;}
+QTableWidget::item:selected {background:#EAF4DE;color:#344F69;}
+QHeaderView::section {background:#F8FAFA;color:#8998A9;border:none;padding:12px 5px;font-size:10px;}
+QScrollArea {background:transparent;border:none;}
+
+QTableWidget::item {padding:8px;} QHeaderView::section {padding:12px 8px;}
+#loginPage,#shellPage,#dashboardPage,#successPage,#failPage,#recordsPage {background:#F2F9F3;}
+#distributionCard,#typeChartCard {background:white;border:1px solid #DAE3DE;border-radius:7px;}
+
+#recordsTable {font-size:11px;} #recordsTable QHeaderView::section {font-size:11px;}
+
+QFrame[role="card"] {background:white;border:1px solid #DFE8DF;border-radius:12px;}
+#dashboardContent,#recordsPage,#successPage,#failPage {background:#F2F9F3;}
+QTableWidget {font-size:11px;border-radius:8px;background:white;selection-background-color:#EFF6E9;}
+QHeaderView::section {background:#F7FAF7;color:#829086;font-size:11px;padding:10px 8px;border:none;border-bottom:1px solid #E7EEE7;}
+QTableWidget::item {padding:8px;border-bottom:1px solid #EDF2EC;}
+QLineEdit#idFilterEdit {background:white;border:1px solid #CADBD0;border-radius:8px;padding:7px 10px;}
+QComboBox {background:white;border:1px solid #CADBD0;border-radius:8px;padding:8px 10px;font-size:12px;}
+QComboBox:focus,QLineEdit:focus {border:1px solid #279E87;}
+#success_step,#success_amount,#success_oldbalanceOrg,#success_newbalanceOrig,#success_oldbalanceDest,#success_newbalanceDest,
+#fail_step,#fail_amount,#fail_oldbalanceOrg,#fail_newbalanceOrig,#fail_oldbalanceDest,#fail_newbalanceDest {background:#F5F8F4;border:1px solid #DDE7DC;border-radius:8px;padding:8px 11px;}
+#success_type,#fail_type {background:#F5F8F4;border:1px solid #DDE7DC;border-radius:8px;padding:8px 10px;font-size:13px;}
+#emptyStatePanel {background:#FCFDF9;border:1px dashed #C9D9C8;border-radius:12px;}
+QScrollArea {background:transparent;border:none;}
+QScrollBar:vertical {width:8px;background:#F2F9F3;}
+QScrollBar::handle:vertical {background:#CBDACE;border-radius:4px;min-height:35px;}
+QScrollBar::add-line:vertical,QScrollBar::sub-line:vertical {height:0;}
+
+QTableWidget::item {padding:0px 8px;border-bottom:1px solid #EDF2EC;}
+</string>
+    </property>
+    <widget class="QWidget" name="centralwidget">
+      <layout class="QVBoxLayout" name="centralLayout">
+        <property name="leftMargin">
+          <number>0</number>
+        </property>
+        <property name="topMargin">
+          <number>0</number>
+        </property>
+        <property name="rightMargin">
+          <number>0</number>
+        </property>
+        <property name="bottomMargin">
+          <number>0</number>
+        </property>
+        <property name="spacing">
+          <number>0</number>
+        </property>
+        <item>
+          <widget class="QStackedWidget" name="rootStack">
+            <property name="currentIndex">
+              <number>0</number>
+            </property>
+            <widget class="QWidget" name="loginPage">
+              <layout class="QVBoxLayout" name="qvboxlayout" stretch="0,0,0,2">
+                <property name="leftMargin">
+                  <number>30</number>
+                </property>
+                <property name="topMargin">
+                  <number>28</number>
+                </property>
+                <property name="rightMargin">
+                  <number>30</number>
+                </property>
+                <property name="bottomMargin">
+                  <number>24</number>
+                </property>
+                <property name="spacing">
+                  <number>6</number>
+                </property>
+                <item>
+                  <layout class="QHBoxLayout" name="qhboxlayout" stretch="0,0,0">
+                    <property name="leftMargin">
+                      <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                      <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                      <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                      <number>0</number>
+                    </property>
+                    <property name="spacing">
+                      <number>6</number>
+                    </property>
+                    <item>
+                      <widget class="QLabel" name="qlabel">
+                        <property name="text">
+                          <string />
+                        </property>
+                        <property name="wordWrap">
+                          <bool>false</bool>
+                        </property>
+                        <property name="pixmap">
+                          <pixmap>assets/qlabel.png</pixmap>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <widget class="QLabel" name="qlabel2">
+                        <property name="styleSheet">
+                          <string>font-size:28px;color:#222222;font-weight:700;background:transparent;</string>
+                        </property>
+                        <property name="text">
+                          <string>AEGIS</string>
+                        </property>
+                        <property name="wordWrap">
+                          <bool>false</bool>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <spacer name="spacer">
+                        <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                          <enum>QSizePolicy::Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                          <size>
+                            <width>0</width>
+                            <height>0</height>
+                          </size>
+                        </property>
+                      </spacer>
+                    </item>
+                  </layout>
+                </item>
+                <item>
+                  <spacer name="spacer2">
+                    <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                      <enum>QSizePolicy::Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                      <size>
+                        <width>0</width>
+                        <height>0</height>
+                      </size>
+                    </property>
+                  </spacer>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                  <widget class="QFrame" name="qframe">
+                    <property name="styleSheet">
+                      <string>QFrame{background:#FAFFF2;border-radius:5px;}</string>
+                    </property>
+                    <property name="minimumSize">
+                      <size>
+                        <width>640</width>
+                        <height>0</height>
+                      </size>
+                    </property>
+                    <property name="maximumSize">
+                      <size>
+                        <width>640</width>
+                        <height>16777215</height>
+                      </size>
+                    </property>
+                    <layout class="QVBoxLayout" name="qvboxlayout2" stretch="0,0,0,0,0,0">
+                      <property name="leftMargin">
+                        <number>80</number>
+                      </property>
+                      <property name="topMargin">
+                        <number>30</number>
+                      </property>
+                      <property name="rightMargin">
+                        <number>80</number>
+                      </property>
+                      <property name="bottomMargin">
+                        <number>30</number>
+                      </property>
+                      <property name="spacing">
+                        <number>17</number>
+                      </property>
+                      <item>
+                        <widget class="QLabel" name="qlabel3">
+                          <property name="styleSheet">
+                            <string>font-size:34px;color:#000000;font-weight:700;background:transparent;</string>
+                          </property>
+                          <property name="text">
+                            <string>Welcome to &lt;span style="color:#4FA519"&gt;AEGIS&lt;/span&gt;</string>
+                          </property>
+                          <property name="wordWrap">
+                            <bool>false</bool>
+                          </property>
+                          <property name="alignment">
+                            <set>Qt::AlignCenter</set>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <widget class="QLabel" name="qlabel4">
+                          <property name="styleSheet">
+                            <string>font-size:16px;color:#7F8DA2;font-weight:400;background:transparent;</string>
+                          </property>
+                          <property name="text">
+                            <string>Fraud Operations System</string>
+                          </property>
+                          <property name="wordWrap">
+                            <bool>false</bool>
+                          </property>
+                          <property name="alignment">
+                            <set>Qt::AlignCenter</set>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <spacer name="spacer3">
+                          <property name="orientation">
+                            <enum>Qt::Vertical</enum>
+                          </property>
+                          <property name="sizeType">
+                            <enum>QSizePolicy::Fixed</enum>
+                          </property>
+                          <property name="sizeHint">
+                            <size>
+                              <width>0</width>
+                              <height>15</height>
+                            </size>
+                          </property>
+                        </spacer>
+                      </item>
+                      <item>
+                        <widget class="QLineEdit" name="usernameEdit">
+                          <property name="minimumSize">
+                            <size>
+                              <width>0</width>
+                              <height>57</height>
+                            </size>
+                          </property>
+                          <property name="text">
+                            <string />
+                          </property>
+                          <property name="placeholderText">
+                            <string>Username</string>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <widget class="QLineEdit" name="passwordEdit">
+                          <property name="minimumSize">
+                            <size>
+                              <width>0</width>
+                              <height>57</height>
+                            </size>
+                          </property>
+                          <property name="text">
+                            <string />
+                          </property>
+                          <property name="placeholderText">
+                            <string>Password</string>
+                          </property>
+                          <property name="echoMode">
+                            <enum>QLineEdit::Password</enum>
+                          </property>
+                        </widget>
+                      </item>
+                      <item alignment="Qt::AlignHCenter">
+                        <widget class="QPushButton" name="loginButton">
+                          <property name="minimumSize">
+                            <size>
+                              <width>230</width>
+                              <height>60</height>
+                            </size>
+                          </property>
+                          <property name="maximumSize">
+                            <size>
+                              <width>230</width>
+                              <height>60</height>
+                            </size>
+                          </property>
+                          <property name="text">
+                            <string>  Log In</string>
+                          </property>
+                          <property name="icon">
+                            <iconset>
+                              <normaloff>assets/loginButton.png</normaloff>
+                            </iconset>
+                          </property>
+                        </widget>
+                      </item>
+                    </layout>
+                  </widget>
+                </item>
+                <item>
+                  <spacer name="spacer4">
+                    <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                      <enum>QSizePolicy::Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                      <size>
+                        <width>0</width>
+                        <height>0</height>
+                      </size>
+                    </property>
+                  </spacer>
+                </item>
+                <item>
+                  <widget class="QLabel" name="previewLoginNote">
+                    <property name="text">
+                      <string>Chế độ xem giao diện · Tài khoản preview / preview</string>
+                    </property>
+                    <property name="styleSheet">
+                      <string>font-size:11px;color:#7A6850;font-weight:400;background:transparent;</string>
+                    </property>
+                    <property name="wordWrap">
+                      <bool>false</bool>
+                    </property>
+                    <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                    </property>
+                  </widget>
+                </item>
+              </layout>
+            </widget>
+            <widget class="QWidget" name="shellPage">
+              <layout class="QHBoxLayout" name="qhboxlayout2" stretch="0,1">
+                <property name="leftMargin">
+                  <number>0</number>
+                </property>
+                <property name="topMargin">
+                  <number>0</number>
+                </property>
+                <property name="rightMargin">
+                  <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                  <number>0</number>
+                </property>
+                <property name="spacing">
+                  <number>0</number>
+                </property>
+                <item>
+                  <widget class="QFrame" name="sidebar">
+                    <property name="minimumSize">
+                      <size>
+                        <width>232</width>
+                        <height>0</height>
+                      </size>
+                    </property>
+                    <property name="maximumSize">
+                      <size>
+                        <width>232</width>
+                        <height>16777215</height>
+                      </size>
+                    </property>
+                    <layout class="QVBoxLayout" name="qvboxlayout3" stretch="0,0,0,0,0,0,0,0,0,0,0">
+                      <property name="leftMargin">
+                        <number>10</number>
+                      </property>
+                      <property name="topMargin">
+                        <number>20</number>
+                      </property>
+                      <property name="rightMargin">
+                        <number>10</number>
+                      </property>
+                      <property name="bottomMargin">
+                        <number>18</number>
+                      </property>
+                      <property name="spacing">
+                        <number>6</number>
+                      </property>
+                      <item>
+                        <layout class="QHBoxLayout" name="qhboxlayout3" stretch="0,0,0">
+                          <property name="leftMargin">
+                            <number>0</number>
+                          </property>
+                          <property name="topMargin">
+                            <number>0</number>
+                          </property>
+                          <property name="rightMargin">
+                            <number>0</number>
+                          </property>
+                          <property name="bottomMargin">
+                            <number>0</number>
+                          </property>
+                          <property name="spacing">
+                            <number>6</number>
+                          </property>
+                          <item>
+                            <widget class="QLabel" name="qlabel5">
+                              <property name="text">
+                                <string />
+                              </property>
+                              <property name="wordWrap">
+                                <bool>false</bool>
+                              </property>
+                              <property name="pixmap">
+                                <pixmap>assets/qlabel5.png</pixmap>
+                              </property>
+                            </widget>
+                          </item>
+                          <item>
+                            <widget class="QLabel" name="qlabel6">
+                              <property name="styleSheet">
+                                <string>font-size:25px;color:#202020;font-weight:700;background:transparent;</string>
+                              </property>
+                              <property name="text">
+                                <string>AEGIS</string>
+                              </property>
+                              <property name="wordWrap">
+                                <bool>false</bool>
+                              </property>
+                            </widget>
+                          </item>
+                          <item>
+                            <spacer name="spacer5">
+                              <property name="orientation">
+                                <enum>Qt::Horizontal</enum>
+                              </property>
+                              <property name="sizeType">
+                                <enum>QSizePolicy::Expanding</enum>
+                              </property>
+                              <property name="sizeHint">
+                                <size>
+                                  <width>0</width>
+                                  <height>0</height>
+                                </size>
+                              </property>
+                            </spacer>
+                          </item>
+                        </layout>
+                      </item>
+                      <item>
+                        <widget class="QLabel" name="qlabel7">
+                          <property name="styleSheet">
+                            <string>font-size:10px;color:#95A789;font-weight:400;background:transparent;</string>
+                          </property>
+                          <property name="text">
+                            <string>FRAUD OPERATIONS</string>
+                          </property>
+                          <property name="wordWrap">
+                            <bool>false</bool>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <spacer name="spacer6">
+                          <property name="orientation">
+                            <enum>Qt::Vertical</enum>
+                          </property>
+                          <property name="sizeType">
+                            <enum>QSizePolicy::Fixed</enum>
+                          </property>
+                          <property name="sizeHint">
+                            <size>
+                              <width>0</width>
+                              <height>25</height>
+                            </size>
+                          </property>
+                        </spacer>
+                      </item>
+                      <item>
+                        <widget class="QPushButton" name="dashboardButton">
+                          <property name="minimumSize">
+                            <size>
+                              <width>0</width>
+                              <height>46</height>
+                            </size>
+                          </property>
+                          <property name="maximumSize">
+                            <size>
+                              <width>16777215</width>
+                              <height>46</height>
+                            </size>
+                          </property>
+                          <property name="text">
+                            <string>Tổng quan</string>
+                          </property>
+                          <property name="checkable">
+                            <bool>true</bool>
+                          </property>
+                          <property name="icon">
+                            <iconset>
+                              <normaloff>assets/dashboardButton.png</normaloff>
+                            </iconset>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <spacer name="spacer7">
+                          <property name="orientation">
+                            <enum>Qt::Vertical</enum>
+                          </property>
+                          <property name="sizeType">
+                            <enum>QSizePolicy::Fixed</enum>
+                          </property>
+                          <property name="sizeHint">
+                            <size>
+                              <width>0</width>
+                              <height>8</height>
+                            </size>
+                          </property>
+                        </spacer>
+                      </item>
+                      <item>
+                        <widget class="QPushButton" name="lookupButton">
+                          <property name="minimumSize">
+                            <size>
+                              <width>0</width>
+                              <height>46</height>
+                            </size>
+                          </property>
+                          <property name="maximumSize">
+                            <size>
+                              <width>16777215</width>
+                              <height>46</height>
+                            </size>
+                          </property>
+                          <property name="text">
+                            <string>Tra cứu giao dịch</string>
+                          </property>
+                          <property name="checkable">
+                            <bool>true</bool>
+                          </property>
+                          <property name="icon">
+                            <iconset>
+                              <normaloff>assets/lookupButton.png</normaloff>
+                            </iconset>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <spacer name="spacer8">
+                          <property name="orientation">
+                            <enum>Qt::Vertical</enum>
+                          </property>
+                          <property name="sizeType">
+                            <enum>QSizePolicy::Fixed</enum>
+                          </property>
+                          <property name="sizeHint">
+                            <size>
+                              <width>0</width>
+                              <height>8</height>
+                            </size>
+                          </property>
+                        </spacer>
+                      </item>
+                      <item>
+                        <widget class="QPushButton" name="recordsButton">
+                          <property name="minimumSize">
+                            <size>
+                              <width>0</width>
+                              <height>46</height>
+                            </size>
+                          </property>
+                          <property name="maximumSize">
+                            <size>
+                              <width>16777215</width>
+                              <height>46</height>
+                            </size>
+                          </property>
+                          <property name="checkable">
+                            <bool>true</bool>
+                          </property>
+                          <property name="icon">
+                            <iconset>
+                              <normaloff>assets/recordsButton.png</normaloff>
+                            </iconset>
+                          </property>
+                          <property name="text">
+                            <string>Lịch sử dự đoán</string>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <spacer name="spacer9">
+                          <property name="orientation">
+                            <enum>Qt::Vertical</enum>
+                          </property>
+                          <property name="sizeType">
+                            <enum>QSizePolicy::Fixed</enum>
+                          </property>
+                          <property name="sizeHint">
+                            <size>
+                              <width>0</width>
+                              <height>8</height>
+                            </size>
+                          </property>
+                        </spacer>
+                      </item>
+                      <item>
+                        <spacer name="spacer10">
+                          <property name="orientation">
+                            <enum>Qt::Vertical</enum>
+                          </property>
+                          <property name="sizeType">
+                            <enum>QSizePolicy::Expanding</enum>
+                          </property>
+                          <property name="sizeHint">
+                            <size>
+                              <width>0</width>
+                              <height>0</height>
+                            </size>
+                          </property>
+                        </spacer>
+                      </item>
+                      <item>
+                        <widget class="QPushButton" name="logoutButton">
+                          <property name="minimumSize">
+                            <size>
+                              <width>0</width>
+                              <height>44</height>
+                            </size>
+                          </property>
+                          <property name="maximumSize">
+                            <size>
+                              <width>16777215</width>
+                              <height>44</height>
+                            </size>
+                          </property>
+                          <property name="text">
+                            <string> Đăng xuất</string>
+                          </property>
+                          <property name="icon">
+                            <iconset>
+                              <normaloff>assets/logoutButton.png</normaloff>
+                            </iconset>
+                          </property>
+                        </widget>
+                      </item>
+                    </layout>
+                  </widget>
+                </item>
+                <item>
+                  <layout class="QVBoxLayout" name="qvboxlayout4" stretch="0,0,1">
+                    <property name="leftMargin">
+                      <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                      <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                      <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                      <number>0</number>
+                    </property>
+                    <property name="spacing">
+                      <number>0</number>
+                    </property>
+                    <item>
+                      <widget class="QFrame" name="topbar">
+                        <layout class="QHBoxLayout" name="qhboxlayout4" stretch="0,0,0,0">
+                          <property name="leftMargin">
+                            <number>25</number>
+                          </property>
+                          <property name="topMargin">
+                            <number>20</number>
+                          </property>
+                          <property name="rightMargin">
+                            <number>26</number>
+                          </property>
+                          <property name="bottomMargin">
+                            <number>20</number>
+                          </property>
+                          <property name="spacing">
+                            <number>6</number>
+                          </property>
+                          <item>
+                            <spacer name="spacer11">
+                              <property name="orientation">
+                                <enum>Qt::Horizontal</enum>
+                              </property>
+                              <property name="sizeType">
+                                <enum>QSizePolicy::Expanding</enum>
+                              </property>
+                              <property name="sizeHint">
+                                <size>
+                                  <width>0</width>
+                                  <height>0</height>
+                                </size>
+                              </property>
+                            </spacer>
+                          </item>
+                          <item>
+                            <widget class="QLineEdit" name="globalSearchEdit">
+                              <property name="minimumSize">
+                                <size>
+                                  <width>335</width>
+                                  <height>22</height>
+                                </size>
+                              </property>
+                              <property name="maximumSize">
+                                <size>
+                                  <width>335</width>
+                                  <height>16777215</height>
+                                </size>
+                              </property>
+                              <property name="text">
+                                <string />
+                              </property>
+                              <property name="placeholderText">
+                                <string />
+                              </property>
+                            </widget>
+                          </item>
+                          <item>
+                            <widget class="QLabel" name="accountLabel">
+                              <property name="styleSheet">
+                                <string>background:#E3F398;color:#26342B;padding:7px 12px;font-size:11px;</string>
+                              </property>
+                              <property name="minimumSize">
+                                <size>
+                                  <width>0</width>
+                                  <height>32</height>
+                                </size>
+                              </property>
+                              <property name="maximumSize">
+                                <size>
+                                  <width>16777215</width>
+                                  <height>32</height>
+                                </size>
+                              </property>
+                              <property name="text">
+                                <string>●  Mark Zuckerberg</string>
+                              </property>
+                              <property name="wordWrap">
+                                <bool>false</bool>
+                              </property>
+                            </widget>
+                          </item>
+                          <item>
+                            <widget class="QLabel" name="qlabel8">
+                              <property name="styleSheet">
+                                <string>background:#DDE1EB;border-radius:25px;</string>
+                              </property>
+                              <property name="minimumSize">
+                                <size>
+                                  <width>51</width>
+                                  <height>51</height>
+                                </size>
+                              </property>
+                              <property name="maximumSize">
+                                <size>
+                                  <width>51</width>
+                                  <height>51</height>
+                                </size>
+                              </property>
+                              <property name="text">
+                                <string />
+                              </property>
+                              <property name="wordWrap">
+                                <bool>false</bool>
+                              </property>
+                              <property name="pixmap">
+                                <pixmap>assets/qlabel8.png</pixmap>
+                              </property>
+                              <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                              </property>
+                            </widget>
+                          </item>
+                        </layout>
+                        <property name="minimumSize">
+                          <size>
+                            <width>0</width>
+                            <height>86</height>
+                          </size>
+                        </property>
+                        <property name="maximumSize">
+                          <size>
+                            <width>16777215</width>
+                            <height>86</height>
+                          </size>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <widget class="QLabel" name="previewBanner">
+                        <property name="text">
+                          <string>UI PREVIEW · Dữ liệu mô phỏng riêng, không ghi MySQL</string>
+                        </property>
+                        <property name="wordWrap">
+                          <bool>false</bool>
+                        </property>
+                        <property name="styleSheet">
+                          <string>background:#FFF5D9;color:#73581B;padding:9px 24px;font-size:12px;font-weight:600;</string>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <widget class="QStackedWidget" name="pageStack">
+                        <property name="currentIndex">
+                          <number>0</number>
+                        </property>
+                        <widget class="QScrollArea" name="dashboardPage">
+                          <property name="widgetResizable">
+                            <bool>true</bool>
+                          </property>
+                          <widget class="QWidget" name="dashboardContent">
+                            <layout class="QVBoxLayout" name="dashboardLayout">
+                              <property name="leftMargin">
+                                <number>24</number>
+                              </property>
+                              <property name="topMargin">
+                                <number>24</number>
+                              </property>
+                              <property name="rightMargin">
+                                <number>24</number>
+                              </property>
+                              <property name="bottomMargin">
+                                <number>24</number>
+                              </property>
+                              <property name="spacing">
+                                <number>16</number>
+                              </property>
+                              <item>
+                                <layout class="QHBoxLayout" name="dashboardHeading" stretch="1,0">
+                                  <item>
+                                    <layout class="QVBoxLayout" name="dashboardTitles">
+                                      <property name="spacing">
+                                        <number>5</number>
+                                      </property>
+                                      <item>
+                                        <widget class="QLabel" name="dashboardTitle">
+                                          <property name="text">
+                                            <string>Tổng quan</string>
+                                          </property>
+                                          <property name="styleSheet">
+                                            <string>font-size:24px;color:#153F35;font-weight:700;background:transparent;</string>
+                                          </property>
+                                          <property name="wordWrap">
+                                            <bool>false</bool>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item>
+                                        <widget class="QLabel" name="dashboardNote">
+                                          <property name="text">
+                                            <string>Kết quả kiểm tra giao dịch của tài khoản đang đăng nhập</string>
+                                          </property>
+                                          <property name="styleSheet">
+                                            <string>font-size:12px;color:#77877D;font-weight:400;background:transparent;</string>
+                                          </property>
+                                          <property name="wordWrap">
+                                            <bool>false</bool>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                    </layout>
+                                  </item>
+                                  <item>
+                                    <widget class="QPushButton" name="quickLookupButton">
+                                      <property name="text">
+                                        <string>Tra cứu giao dịch  →</string>
+                                      </property>
+                                    </widget>
+                                  </item>
+                                </layout>
+                              </item>
+                              <item>
+                                <layout class="QHBoxLayout" name="statsLayout" stretch="1,1,1,1">
+                                  <property name="spacing">
+                                    <number>14</number>
+                                  </property>
+                                  <item>
+                                    <widget class="QFrame" name="totalValueCard">
+                                      <property name="role" stdset="0">
+                                        <string>card</string>
+                                      </property>
+                                      <layout class="QVBoxLayout" name="totalValueLayout">
+                                        <property name="leftMargin">
+                                          <number>18</number>
+                                        </property>
+                                        <property name="topMargin">
+                                          <number>18</number>
+                                        </property>
+                                        <property name="rightMargin">
+                                          <number>18</number>
+                                        </property>
+                                        <property name="bottomMargin">
+                                          <number>18</number>
+                                        </property>
+                                        <property name="spacing">
+                                          <number>8</number>
+                                        </property>
+                                        <item>
+                                          <widget class="QLabel" name="totalValueCaption">
+                                            <property name="text">
+                                              <string>Tổng giao dịch đã kiểm tra</string>
+                                            </property>
+                                            <property name="styleSheet">
+                                              <string>font-size:12px;color:#75857C;font-weight:400;background:transparent;</string>
+                                            </property>
+                                            <property name="wordWrap">
+                                              <bool>false</bool>
+                                            </property>
+                                          </widget>
+                                        </item>
+                                        <item>
+                                          <widget class="QLabel" name="totalValue">
+                                            <property name="text">
+                                              <string>0</string>
+                                            </property>
+                                            <property name="styleSheet">
+                                              <string>font-size:28px;color:#00595C;font-weight:700;background:transparent;</string>
+                                            </property>
+                                            <property name="wordWrap">
+                                              <bool>false</bool>
+                                            </property>
+                                          </widget>
+                                        </item>
+                                      </layout>
+                                      <property name="styleSheet">
+                                        <string>QFrame#totalValueCard {background:white;border:1px solid #DFE8DF;border-radius:12px;}</string>
+                                      </property>
+                                    </widget>
+                                  </item>
+                                  <item>
+                                    <widget class="QFrame" name="fraudValueCard">
+                                      <property name="role" stdset="0">
+                                        <string>card</string>
+                                      </property>
+                                      <layout class="QVBoxLayout" name="fraudValueLayout">
+                                        <property name="leftMargin">
+                                          <number>18</number>
+                                        </property>
+                                        <property name="topMargin">
+                                          <number>18</number>
+                                        </property>
+                                        <property name="rightMargin">
+                                          <number>18</number>
+                                        </property>
+                                        <property name="bottomMargin">
+                                          <number>18</number>
+                                        </property>
+                                        <property name="spacing">
+                                          <number>8</number>
+                                        </property>
+                                        <item>
+                                          <widget class="QLabel" name="fraudValueCaption">
+                                            <property name="text">
+                                              <string>Fraud</string>
+                                            </property>
+                                            <property name="styleSheet">
+                                              <string>font-size:12px;color:#75857C;font-weight:400;background:transparent;</string>
+                                            </property>
+                                            <property name="wordWrap">
+                                              <bool>false</bool>
+                                            </property>
+                                          </widget>
+                                        </item>
+                                        <item>
+                                          <widget class="QLabel" name="fraudValue">
+                                            <property name="text">
+                                              <string>0</string>
+                                            </property>
+                                            <property name="styleSheet">
+                                              <string>font-size:28px;color:#D34252;font-weight:700;background:transparent;</string>
+                                            </property>
+                                            <property name="wordWrap">
+                                              <bool>false</bool>
+                                            </property>
+                                          </widget>
+                                        </item>
+                                      </layout>
+                                      <property name="styleSheet">
+                                        <string>QFrame#fraudValueCard {background:white;border:1px solid #DFE8DF;border-radius:12px;}</string>
+                                      </property>
+                                    </widget>
+                                  </item>
+                                  <item>
+                                    <widget class="QFrame" name="legitimateValueCard">
+                                      <property name="role" stdset="0">
+                                        <string>card</string>
+                                      </property>
+                                      <layout class="QVBoxLayout" name="legitimateValueLayout">
+                                        <property name="leftMargin">
+                                          <number>18</number>
+                                        </property>
+                                        <property name="topMargin">
+                                          <number>18</number>
+                                        </property>
+                                        <property name="rightMargin">
+                                          <number>18</number>
+                                        </property>
+                                        <property name="bottomMargin">
+                                          <number>18</number>
+                                        </property>
+                                        <property name="spacing">
+                                          <number>8</number>
+                                        </property>
+                                        <item>
+                                          <widget class="QLabel" name="legitimateValueCaption">
+                                            <property name="text">
+                                              <string>Legitimate</string>
+                                            </property>
+                                            <property name="styleSheet">
+                                              <string>font-size:12px;color:#75857C;font-weight:400;background:transparent;</string>
+                                            </property>
+                                            <property name="wordWrap">
+                                              <bool>false</bool>
+                                            </property>
+                                          </widget>
+                                        </item>
+                                        <item>
+                                          <widget class="QLabel" name="legitimateValue">
+                                            <property name="text">
+                                              <string>0</string>
+                                            </property>
+                                            <property name="styleSheet">
+                                              <string>font-size:28px;color:#208873;font-weight:700;background:transparent;</string>
+                                            </property>
+                                            <property name="wordWrap">
+                                              <bool>false</bool>
+                                            </property>
+                                          </widget>
+                                        </item>
+                                      </layout>
+                                      <property name="styleSheet">
+                                        <string>QFrame#legitimateValueCard {background:white;border:1px solid #DFE8DF;border-radius:12px;}</string>
+                                      </property>
+                                    </widget>
+                                  </item>
+                                  <item>
+                                    <widget class="QFrame" name="fraudRateValueCard">
+                                      <property name="role" stdset="0">
+                                        <string>card</string>
+                                      </property>
+                                      <layout class="QVBoxLayout" name="fraudRateValueLayout">
+                                        <property name="leftMargin">
+                                          <number>18</number>
+                                        </property>
+                                        <property name="topMargin">
+                                          <number>18</number>
+                                        </property>
+                                        <property name="rightMargin">
+                                          <number>18</number>
+                                        </property>
+                                        <property name="bottomMargin">
+                                          <number>18</number>
+                                        </property>
+                                        <property name="spacing">
+                                          <number>8</number>
+                                        </property>
+                                        <item>
+                                          <widget class="QLabel" name="fraudRateValueCaption">
+                                            <property name="text">
+                                              <string>Tỷ lệ Fraud</string>
+                                            </property>
+                                            <property name="styleSheet">
+                                              <string>font-size:12px;color:#75857C;font-weight:400;background:transparent;</string>
+                                            </property>
+                                            <property name="wordWrap">
+                                              <bool>false</bool>
+                                            </property>
+                                          </widget>
+                                        </item>
+                                        <item>
+                                          <widget class="QLabel" name="fraudRateValue">
+                                            <property name="text">
+                                              <string>0</string>
+                                            </property>
+                                            <property name="styleSheet">
+                                              <string>font-size:28px;color:#00595C;font-weight:700;background:transparent;</string>
+                                            </property>
+                                            <property name="wordWrap">
+                                              <bool>false</bool>
+                                            </property>
+                                          </widget>
+                                        </item>
+                                      </layout>
+                                      <property name="styleSheet">
+                                        <string>QFrame#fraudRateValueCard {background:white;border:1px solid #DFE8DF;border-radius:12px;}</string>
+                                      </property>
+                                    </widget>
+                                  </item>
+                                </layout>
+                              </item>
+                              <item>
+                                <widget class="QFrame" name="emptyStatePanel">
+                                  <property name="role" stdset="0">
+                                    <string>card</string>
+                                  </property>
+                                  <layout class="QVBoxLayout" name="emptyStateLayout">
+                                    <property name="leftMargin">
+                                      <number>30</number>
+                                    </property>
+                                    <property name="topMargin">
+                                      <number>30</number>
+                                    </property>
+                                    <property name="rightMargin">
+                                      <number>30</number>
+                                    </property>
+                                    <property name="bottomMargin">
+                                      <number>30</number>
+                                    </property>
+                                    <property name="spacing">
+                                      <number>12</number>
+                                    </property>
+                                    <item>
+                                      <widget class="QLabel" name="emptyTitle">
+                                        <property name="text">
+                                          <string>Chưa có lịch sử dự đoán</string>
+                                        </property>
+                                        <property name="styleSheet">
+                                          <string>font-size:21px;color:#284C3D;font-weight:700;background:transparent;</string>
+                                        </property>
+                                        <property name="wordWrap">
+                                          <bool>false</bool>
+                                        </property>
+                                        <property name="alignment">
+                                          <set>Qt::AlignCenter</set>
+                                        </property>
+                                      </widget>
+                                    </item>
+                                    <item>
+                                      <widget class="QLabel" name="emptyMessage">
+                                        <property name="text">
+                                          <string>Kiểm tra giao dịch đầu tiên để xem thống kê và biểu đồ của bạn.</string>
+                                        </property>
+                                        <property name="styleSheet">
+                                          <string>font-size:13px;color:#718277;font-weight:400;background:transparent;</string>
+                                        </property>
+                                        <property name="wordWrap">
+                                          <bool>false</bool>
+                                        </property>
+                                        <property name="alignment">
+                                          <set>Qt::AlignCenter</set>
+                                        </property>
+                                      </widget>
+                                    </item>
+                                    <item alignment="Qt::AlignHCenter">
+                                      <widget class="QPushButton" name="emptyLookupButton">
+                                        <property name="text">
+                                          <string>Kiểm tra giao dịch</string>
+                                        </property>
+                                      </widget>
+                                    </item>
+                                  </layout>
+                                  <property name="minimumSize">
+                                    <size>
+                                      <width>0</width>
+                                      <height>280</height>
+                                    </size>
+                                  </property>
+                                  <property name="styleSheet">
+                                    <string>QFrame#emptyStatePanel {background:white;border:1px solid #DFE8DF;border-radius:12px;}</string>
+                                  </property>
+                                </widget>
+                              </item>
+                              <item>
+                                <layout class="QHBoxLayout" name="dashboardCharts" stretch="1,1,1">
+                                  <property name="spacing">
+                                    <number>14</number>
+                                  </property>
+                                  <item>
+                                    <widget class="QFrame" name="distributionCard">
+                                      <property name="role" stdset="0">
+                                        <string>card</string>
+                                      </property>
+                                      <layout class="QVBoxLayout" name="distributionCardLayout">
+                                        <property name="leftMargin">
+                                          <number>16</number>
+                                        </property>
+                                        <property name="topMargin">
+                                          <number>16</number>
+                                        </property>
+                                        <property name="rightMargin">
+                                          <number>16</number>
+                                        </property>
+                                        <property name="bottomMargin">
+                                          <number>16</number>
+                                        </property>
+                                        <property name="spacing">
+                                          <number>7</number>
+                                        </property>
+                                        <item>
+                                          <widget class="QLabel" name="distributionCardTitle">
+                                            <property name="text">
+                                              <string>Transaction Distribution</string>
+                                            </property>
+                                            <property name="styleSheet">
+                                              <string>font-size:14px;color:#243D31;font-weight:700;background:transparent;</string>
+                                            </property>
+                                            <property name="wordWrap">
+                                              <bool>false</bool>
+                                            </property>
+                                          </widget>
+                                        </item>
+                                        <item>
+                                          <widget class="QLabel" name="distributionCardSubtitle">
+                                            <property name="text">
+                                              <string>Fraud / Legitimate</string>
+                                            </property>
+                                            <property name="styleSheet">
+                                              <string>font-size:11px;color:#809087;font-weight:400;background:transparent;</string>
+                                            </property>
+                                            <property name="wordWrap">
+                                              <bool>false</bool>
+                                            </property>
+                                          </widget>
+                                        </item>
+                                        <item>
+                                          <widget class="QWidget" name="distributionHost">
+                                            <property name="minimumSize">
+                                              <size>
+                                                <width>0</width>
+                                                <height>185</height>
+                                              </size>
+                                            </property>
+                                            <layout class="QVBoxLayout" name="distributionHostLayout">
+                                              <property name="leftMargin">
+                                                <number>0</number>
+                                              </property>
+                                              <property name="topMargin">
+                                                <number>0</number>
+                                              </property>
+                                              <property name="rightMargin">
+                                                <number>0</number>
+                                              </property>
+                                              <property name="bottomMargin">
+                                                <number>0</number>
+                                              </property>
+                                              <property name="spacing">
+                                                <number>0</number>
+                                              </property>
+                                            </layout>
+                                          </widget>
+                                        </item>
+                                        <item>
+                                          <widget class="QLabel" name="distributionLegend">
+                                            <property name="text">
+                                              <string>Fraud · Legitimate</string>
+                                            </property>
+                                            <property name="styleSheet">
+                                              <string>font-size:11px;color:#657B6C;font-weight:400;background:transparent;</string>
+                                            </property>
+                                            <property name="wordWrap">
+                                              <bool>false</bool>
+                                            </property>
+                                            <property name="alignment">
+                                              <set>Qt::AlignCenter</set>
+                                            </property>
+                                          </widget>
+                                        </item>
+                                      </layout>
+                                      <property name="styleSheet">
+                                        <string>QFrame#distributionCard {background:white;border:1px solid #DFE8DF;border-radius:12px;}</string>
+                                      </property>
+                                    </widget>
+                                  </item>
+                                  <item>
+                                    <widget class="QFrame" name="activityCard">
+                                      <property name="role" stdset="0">
+                                        <string>card</string>
+                                      </property>
+                                      <layout class="QVBoxLayout" name="activityCardLayout">
+                                        <property name="leftMargin">
+                                          <number>16</number>
+                                        </property>
+                                        <property name="topMargin">
+                                          <number>16</number>
+                                        </property>
+                                        <property name="rightMargin">
+                                          <number>16</number>
+                                        </property>
+                                        <property name="bottomMargin">
+                                          <number>16</number>
+                                        </property>
+                                        <property name="spacing">
+                                          <number>7</number>
+                                        </property>
+                                        <item>
+                                          <widget class="QLabel" name="activityCardTitle">
+                                            <property name="text">
+                                              <string>Transaction Activity</string>
+                                            </property>
+                                            <property name="styleSheet">
+                                              <string>font-size:14px;color:#243D31;font-weight:700;background:transparent;</string>
+                                            </property>
+                                            <property name="wordWrap">
+                                              <bool>false</bool>
+                                            </property>
+                                          </widget>
+                                        </item>
+                                        <item>
+                                          <widget class="QLabel" name="activityCardSubtitle">
+                                            <property name="text">
+                                              <string>Số giao dịch đã kiểm tra theo ngày</string>
+                                            </property>
+                                            <property name="styleSheet">
+                                              <string>font-size:11px;color:#809087;font-weight:400;background:transparent;</string>
+                                            </property>
+                                            <property name="wordWrap">
+                                              <bool>false</bool>
+                                            </property>
+                                          </widget>
+                                        </item>
+                                        <item>
+                                          <widget class="QWidget" name="activityHost">
+                                            <property name="minimumSize">
+                                              <size>
+                                                <width>0</width>
+                                                <height>185</height>
+                                              </size>
+                                            </property>
+                                            <layout class="QVBoxLayout" name="activityHostLayout">
+                                              <property name="leftMargin">
+                                                <number>0</number>
+                                              </property>
+                                              <property name="topMargin">
+                                                <number>0</number>
+                                              </property>
+                                              <property name="rightMargin">
+                                                <number>0</number>
+                                              </property>
+                                              <property name="bottomMargin">
+                                                <number>0</number>
+                                              </property>
+                                              <property name="spacing">
+                                                <number>0</number>
+                                              </property>
+                                            </layout>
+                                          </widget>
+                                        </item>
+                                        <item>
+                                          <widget class="QLabel" name="activityPeriod">
+                                            <property name="text">
+                                              <string />
+                                            </property>
+                                            <property name="styleSheet">
+                                              <string>font-size:11px;color:#809087;font-weight:400;background:transparent;</string>
+                                            </property>
+                                            <property name="wordWrap">
+                                              <bool>false</bool>
+                                            </property>
+                                            <property name="alignment">
+                                              <set>Qt::AlignCenter</set>
+                                            </property>
+                                          </widget>
+                                        </item>
+                                      </layout>
+                                      <property name="styleSheet">
+                                        <string>QFrame#activityCard {background:white;border:1px solid #DFE8DF;border-radius:12px;}</string>
+                                      </property>
+                                    </widget>
+                                  </item>
+                                  <item>
+                                    <widget class="QFrame" name="typeChartCard">
+                                      <property name="role" stdset="0">
+                                        <string>card</string>
+                                      </property>
+                                      <layout class="QVBoxLayout" name="typeChartCardLayout">
+                                        <property name="leftMargin">
+                                          <number>16</number>
+                                        </property>
+                                        <property name="topMargin">
+                                          <number>16</number>
+                                        </property>
+                                        <property name="rightMargin">
+                                          <number>16</number>
+                                        </property>
+                                        <property name="bottomMargin">
+                                          <number>16</number>
+                                        </property>
+                                        <property name="spacing">
+                                          <number>7</number>
+                                        </property>
+                                        <item>
+                                          <widget class="QLabel" name="typeChartCardTitle">
+                                            <property name="text">
+                                              <string>Fraud by Transaction Type</string>
+                                            </property>
+                                            <property name="styleSheet">
+                                              <string>font-size:14px;color:#243D31;font-weight:700;background:transparent;</string>
+                                            </property>
+                                            <property name="wordWrap">
+                                              <bool>false</bool>
+                                            </property>
+                                          </widget>
+                                        </item>
+                                        <item>
+                                          <widget class="QLabel" name="typeChartCardSubtitle">
+                                            <property name="text">
+                                              <string>Số giao dịch được dự đoán Fraud</string>
+                                            </property>
+                                            <property name="styleSheet">
+                                              <string>font-size:11px;color:#809087;font-weight:400;background:transparent;</string>
+                                            </property>
+                                            <property name="wordWrap">
+                                              <bool>false</bool>
+                                            </property>
+                                          </widget>
+                                        </item>
+                                        <item>
+                                          <widget class="QWidget" name="typeChartHost">
+                                            <property name="minimumSize">
+                                              <size>
+                                                <width>0</width>
+                                                <height>185</height>
+                                              </size>
+                                            </property>
+                                            <layout class="QVBoxLayout" name="typeChartHostLayout">
+                                              <property name="leftMargin">
+                                                <number>0</number>
+                                              </property>
+                                              <property name="topMargin">
+                                                <number>0</number>
+                                              </property>
+                                              <property name="rightMargin">
+                                                <number>0</number>
+                                              </property>
+                                              <property name="bottomMargin">
+                                                <number>0</number>
+                                              </property>
+                                              <property name="spacing">
+                                                <number>0</number>
+                                              </property>
+                                            </layout>
+                                          </widget>
+                                        </item>
+                                        <item>
+                                          <widget class="QLabel" name="fraudTypeLegend">
+                                            <property name="text">
+                                              <string />
+                                            </property>
+                                            <property name="styleSheet">
+                                              <string>font-size:11px;color:#809087;font-weight:400;background:transparent;</string>
+                                            </property>
+                                            <property name="wordWrap">
+                                              <bool>false</bool>
+                                            </property>
+                                          </widget>
+                                        </item>
+                                      </layout>
+                                      <property name="styleSheet">
+                                        <string>QFrame#typeChartCard {background:white;border:1px solid #DFE8DF;border-radius:12px;}</string>
+                                      </property>
+                                    </widget>
+                                  </item>
+                                </layout>
+                              </item>
+                              <item>
+                                <widget class="QFrame" name="recentSection">
+                                  <property name="role" stdset="0">
+                                    <string>card</string>
+                                  </property>
+                                  <layout class="QVBoxLayout" name="recentSectionLayout">
+                                    <property name="leftMargin">
+                                      <number>16</number>
+                                    </property>
+                                    <property name="topMargin">
+                                      <number>16</number>
+                                    </property>
+                                    <property name="rightMargin">
+                                      <number>16</number>
+                                    </property>
+                                    <property name="bottomMargin">
+                                      <number>16</number>
+                                    </property>
+                                    <property name="spacing">
+                                      <number>10</number>
+                                    </property>
+                                    <item>
+                                      <layout class="QHBoxLayout" name="recentHeading" stretch="1,0">
+                                        <item>
+                                          <widget class="QLabel" name="recentTitle">
+                                            <property name="text">
+                                              <string>Recent Transactions</string>
+                                            </property>
+                                            <property name="styleSheet">
+                                              <string>font-size:15px;color:#243D31;font-weight:700;background:transparent;</string>
+                                            </property>
+                                            <property name="wordWrap">
+                                              <bool>false</bool>
+                                            </property>
+                                          </widget>
+                                        </item>
+                                        <item>
+                                          <widget class="QPushButton" name="viewAllButton">
+                                            <property name="text">
+                                              <string>Xem lịch sử  →</string>
+                                            </property>
+                                            <property name="styleSheet">
+                                              <string>background:transparent;color:#167C69;padding:6px 0px;text-align:right;font-weight:600;</string>
+                                            </property>
+                                          </widget>
+                                        </item>
+                                      </layout>
+                                    </item>
+                                    <item>
+                                      <widget class="QTableWidget" name="recentTable">
+                                        <property name="rowCount">
+                                          <number>0</number>
+                                        </property>
+                                        <property name="columnCount">
+                                          <number>7</number>
+                                        </property>
+                                        <property name="showGrid">
+                                          <bool>false</bool>
+                                        </property>
+                                        <property name="wordWrap">
+                                          <bool>false</bool>
+                                        </property>
+                                        <property name="editTriggers">
+                                          <set>QAbstractItemView::NoEditTriggers</set>
+                                        </property>
+                                        <property name="selectionBehavior">
+                                          <enum>QAbstractItemView::SelectRows</enum>
+                                        </property>
+                                        <column>
+                                          <property name="text">
+                                            <string>Transaction ID</string>
+                                          </property>
+                                        </column>
+                                        <column>
+                                          <property name="text">
+                                            <string>Type</string>
+                                          </property>
+                                        </column>
+                                        <column>
+                                          <property name="text">
+                                            <string>Amount</string>
+                                          </property>
+                                        </column>
+                                        <column>
+                                          <property name="text">
+                                            <string>Fraud Score</string>
+                                          </property>
+                                        </column>
+                                        <column>
+                                          <property name="text">
+                                            <string>Prediction</string>
+                                          </property>
+                                        </column>
+                                        <column>
+                                          <property name="text">
+                                            <string>Checked By</string>
+                                          </property>
+                                        </column>
+                                        <column>
+                                          <property name="text">
+                                            <string>Created At</string>
+                                          </property>
+                                        </column>
+                                      </widget>
+                                    </item>
+                                  </layout>
+                                  <property name="styleSheet">
+                                    <string>QFrame#recentSection {background:white;border:1px solid #DFE8DF;border-radius:12px;}</string>
+                                  </property>
+                                </widget>
+                              </item>
+                              <item>
+                                <spacer name="dashboardBottomSpace">
+                                  <property name="orientation">
+                                    <enum>Qt::Vertical</enum>
+                                  </property>
+                                  <property name="sizeType">
+                                    <enum>QSizePolicy::Expanding</enum>
+                                  </property>
+                                  <property name="sizeHint">
+                                    <size>
+                                      <width>0</width>
+                                      <height>0</height>
+                                    </size>
+                                  </property>
+                                </spacer>
+                              </item>
+                            </layout>
+                          </widget>
+                        </widget>
+                        <widget class="QWidget" name="successPage">
+                          <layout class="QHBoxLayout" name="qhboxlayout8" stretch="8,5">
+                            <property name="leftMargin">
+                              <number>32</number>
+                            </property>
+                            <property name="topMargin">
+                              <number>24</number>
+                            </property>
+                            <property name="rightMargin">
+                              <number>30</number>
+                            </property>
+                            <property name="bottomMargin">
+                              <number>21</number>
+                            </property>
+                            <property name="spacing">
+                              <number>32</number>
+                            </property>
+                            <item>
+                              <widget class="QFrame" name="formPanel">
+                                <property name="styleSheet">
+                                  <string>QFrame#formPanel {background:white;border:1px solid #DAE3DE;border-radius:14px;}</string>
+                                </property>
+                                <layout class="QVBoxLayout" name="successFormLayout">
+                                  <property name="leftMargin">
+                                    <number>22</number>
+                                  </property>
+                                  <property name="topMargin">
+                                    <number>22</number>
+                                  </property>
+                                  <property name="rightMargin">
+                                    <number>22</number>
+                                  </property>
+                                  <property name="bottomMargin">
+                                    <number>22</number>
+                                  </property>
+                                  <property name="spacing">
+                                    <number>16</number>
+                                  </property>
+                                  <item>
+                                    <widget class="QLabel" name="successFormTitle">
+                                      <property name="text">
+                                        <string>Fetched Transaction Details</string>
+                                      </property>
+                                      <property name="styleSheet">
+                                        <string>font-size:20px;color:#152A23;font-weight:700;background:transparent;</string>
+                                      </property>
+                                      <property name="wordWrap">
+                                        <bool>false</bool>
+                                      </property>
+                                    </widget>
+                                  </item>
+                                  <item>
+                                    <widget class="QLabel" name="successFormSubtitle">
+                                      <property name="text">
+                                        <string>Nhập thông tin giao dịch cần kiểm tra</string>
+                                      </property>
+                                      <property name="styleSheet">
+                                        <string>font-size:12px;color:#809087;font-weight:400;background:transparent;</string>
+                                      </property>
+                                      <property name="wordWrap">
+                                        <bool>false</bool>
+                                      </property>
+                                    </widget>
+                                  </item>
+                                  <item>
+                                    <spacer name="successTopSpace">
+                                      <property name="orientation">
+                                        <enum>Qt::Vertical</enum>
+                                      </property>
+                                      <property name="sizeHint">
+                                        <size>
+                                          <width>0</width>
+                                          <height>20</height>
+                                        </size>
+                                      </property>
+                                      <property name="sizeType">
+                                        <enum>QSizePolicy::Fixed</enum>
+                                      </property>
+                                    </spacer>
+                                  </item>
+                                  <item>
+                                    <layout class="QGridLayout" name="successCompactInputs" columnstretch="1,1,1">
+                                      <property name="horizontalSpacing">
+                                        <number>16</number>
+                                      </property>
+                                      <property name="verticalSpacing">
+                                        <number>10</number>
+                                      </property>
+                                      <item row="0" column="0">
+                                        <widget class="QLabel" name="successstepCaption">
+                                          <property name="text">
+                                            <string>Step</string>
+                                          </property>
+                                          <property name="styleSheet">
+                                            <string>font-size:13px;color:#6B7D72;font-weight:700;background:transparent;</string>
+                                          </property>
+                                          <property name="wordWrap">
+                                            <bool>false</bool>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item row="1" column="0">
+                                        <widget class="QLineEdit" name="success_step">
+                                          <property name="text">
+                                            <string />
+                                          </property>
+                                          <property name="placeholderText">
+                                            <string />
+                                          </property>
+                                          <property name="minimumSize">
+                                            <size>
+                                              <width>0</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                          <property name="maximumSize">
+                                            <size>
+                                              <width>16777215</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item row="0" column="1">
+                                        <widget class="QLabel" name="successtypeCaption">
+                                          <property name="text">
+                                            <string>Type</string>
+                                          </property>
+                                          <property name="styleSheet">
+                                            <string>font-size:13px;color:#6B7D72;font-weight:700;background:transparent;</string>
+                                          </property>
+                                          <property name="wordWrap">
+                                            <bool>false</bool>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item row="1" column="1">
+                                        <widget class="QComboBox" name="success_type">
+                                          <item>
+                                            <property name="text">
+                                              <string>CASH_IN</string>
+                                            </property>
+                                          </item>
+                                          <item>
+                                            <property name="text">
+                                              <string>CASH_OUT</string>
+                                            </property>
+                                          </item>
+                                          <item>
+                                            <property name="text">
+                                              <string>DEBIT</string>
+                                            </property>
+                                          </item>
+                                          <item>
+                                            <property name="text">
+                                              <string>PAYMENT</string>
+                                            </property>
+                                          </item>
+                                          <item>
+                                            <property name="text">
+                                              <string>TRANSFER</string>
+                                            </property>
+                                          </item>
+                                          <property name="placeholderText">
+                                            <string>Chọn loại giao dịch</string>
+                                          </property>
+                                          <property name="currentIndex">
+                                            <number>-1</number>
+                                          </property>
+                                          <property name="minimumSize">
+                                            <size>
+                                              <width>0</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                          <property name="maximumSize">
+                                            <size>
+                                              <width>16777215</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item row="0" column="2">
+                                        <widget class="QLabel" name="successamountCaption">
+                                          <property name="text">
+                                            <string>Amount</string>
+                                          </property>
+                                          <property name="styleSheet">
+                                            <string>font-size:13px;color:#6B7D72;font-weight:700;background:transparent;</string>
+                                          </property>
+                                          <property name="wordWrap">
+                                            <bool>false</bool>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item row="1" column="2">
+                                        <widget class="QLineEdit" name="success_amount">
+                                          <property name="text">
+                                            <string />
+                                          </property>
+                                          <property name="placeholderText">
+                                            <string />
+                                          </property>
+                                          <property name="minimumSize">
+                                            <size>
+                                              <width>0</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                          <property name="maximumSize">
+                                            <size>
+                                              <width>16777215</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                    </layout>
+                                  </item>
+                                  <item>
+                                    <layout class="QGridLayout" name="successBalanceInputs" columnstretch="1,1">
+                                      <property name="horizontalSpacing">
+                                        <number>24</number>
+                                      </property>
+                                      <item row="0" column="0">
+                                        <widget class="QLabel" name="successoldbalanceOrgCaption">
+                                          <property name="text">
+                                            <string>Old Balance of Origin</string>
+                                          </property>
+                                          <property name="styleSheet">
+                                            <string>font-size:13px;color:#6B7D72;font-weight:700;background:transparent;</string>
+                                          </property>
+                                          <property name="wordWrap">
+                                            <bool>false</bool>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item row="1" column="0">
+                                        <widget class="QLineEdit" name="success_oldbalanceOrg">
+                                          <property name="text">
+                                            <string />
+                                          </property>
+                                          <property name="placeholderText">
+                                            <string />
+                                          </property>
+                                          <property name="minimumSize">
+                                            <size>
+                                              <width>0</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                          <property name="maximumSize">
+                                            <size>
+                                              <width>16777215</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item row="0" column="1">
+                                        <widget class="QLabel" name="successnewbalanceOrigCaption">
+                                          <property name="text">
+                                            <string>New Balance of Origin</string>
+                                          </property>
+                                          <property name="styleSheet">
+                                            <string>font-size:13px;color:#6B7D72;font-weight:700;background:transparent;</string>
+                                          </property>
+                                          <property name="wordWrap">
+                                            <bool>false</bool>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item row="1" column="1">
+                                        <widget class="QLineEdit" name="success_newbalanceOrig">
+                                          <property name="text">
+                                            <string />
+                                          </property>
+                                          <property name="placeholderText">
+                                            <string />
+                                          </property>
+                                          <property name="minimumSize">
+                                            <size>
+                                              <width>0</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                          <property name="maximumSize">
+                                            <size>
+                                              <width>16777215</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item row="2" column="0">
+                                        <widget class="QLabel" name="successoldbalanceDestCaption">
+                                          <property name="text">
+                                            <string>Old Balance of Destination</string>
+                                          </property>
+                                          <property name="styleSheet">
+                                            <string>font-size:13px;color:#6B7D72;font-weight:700;background:transparent;</string>
+                                          </property>
+                                          <property name="wordWrap">
+                                            <bool>false</bool>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item row="3" column="0">
+                                        <widget class="QLineEdit" name="success_oldbalanceDest">
+                                          <property name="text">
+                                            <string />
+                                          </property>
+                                          <property name="placeholderText">
+                                            <string />
+                                          </property>
+                                          <property name="minimumSize">
+                                            <size>
+                                              <width>0</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                          <property name="maximumSize">
+                                            <size>
+                                              <width>16777215</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item row="2" column="1">
+                                        <widget class="QLabel" name="successnewbalanceDestCaption">
+                                          <property name="text">
+                                            <string>New Balance of Destination</string>
+                                          </property>
+                                          <property name="styleSheet">
+                                            <string>font-size:13px;color:#6B7D72;font-weight:700;background:transparent;</string>
+                                          </property>
+                                          <property name="wordWrap">
+                                            <bool>false</bool>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item row="3" column="1">
+                                        <widget class="QLineEdit" name="success_newbalanceDest">
+                                          <property name="text">
+                                            <string />
+                                          </property>
+                                          <property name="placeholderText">
+                                            <string />
+                                          </property>
+                                          <property name="minimumSize">
+                                            <size>
+                                              <width>0</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                          <property name="maximumSize">
+                                            <size>
+                                              <width>16777215</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <property name="verticalSpacing">
+                                        <number>18</number>
+                                      </property>
+                                    </layout>
+                                  </item>
+                                  <item>
+                                    <spacer name="successBottomSpace">
+                                      <property name="orientation">
+                                        <enum>Qt::Vertical</enum>
+                                      </property>
+                                      <property name="sizeType">
+                                        <enum>QSizePolicy::Expanding</enum>
+                                      </property>
+                                      <property name="sizeHint">
+                                        <size>
+                                          <width>0</width>
+                                          <height>8</height>
+                                        </size>
+                                      </property>
+                                    </spacer>
+                                  </item>
+                                  <item>
+                                    <layout class="QHBoxLayout" name="successActions" stretch="2,1">
+                                      <property name="spacing">
+                                        <number>12</number>
+                                      </property>
+                                      <item>
+                                        <widget class="QPushButton" name="successSubmitButton">
+                                          <property name="text">
+                                            <string>Submit</string>
+                                          </property>
+                                          <property name="minimumSize">
+                                            <size>
+                                              <width>0</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item>
+                                        <widget class="QPushButton" name="successClearButton">
+                                          <property name="text">
+                                            <string>Clear</string>
+                                          </property>
+                                          <property name="minimumSize">
+                                            <size>
+                                              <width>0</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                    </layout>
+                                  </item>
+                                </layout>
+                              </widget>
+                            </item>
+                            <item>
+                              <layout class="QVBoxLayout" name="qvboxlayout13" stretch="0,3,2">
+                                <property name="leftMargin">
+                                  <number>0</number>
+                                </property>
+                                <property name="topMargin">
+                                  <number>0</number>
+                                </property>
+                                <property name="rightMargin">
+                                  <number>0</number>
+                                </property>
+                                <property name="bottomMargin">
+                                  <number>0</number>
+                                </property>
+                                <property name="spacing">
+                                  <number>16</number>
+                                </property>
+                                <item>
+                                  <widget class="QLabel" name="qlabel26">
+                                    <property name="styleSheet">
+                                      <string>font-size:17px;color:#050505;font-weight:700;background:transparent;</string>
+                                    </property>
+                                    <property name="text">
+                                      <string>Fraud Detected Confidence:</string>
+                                    </property>
+                                    <property name="wordWrap">
+                                      <bool>false</bool>
+                                    </property>
+                                  </widget>
+                                </item>
+                                <item>
+                                  <widget class="QFrame" name="card5">
+                                    <property name="styleSheet">
+                                      <string>QFrame#card5 {background:white;border:1px solid #DAE3DE;border-radius:7px;}</string>
+                                    </property>
+                                    <layout class="QVBoxLayout" name="qvboxlayout14" stretch="0">
+                                      <property name="leftMargin">
+                                        <number>9</number>
+                                      </property>
+                                      <property name="topMargin">
+                                        <number>9</number>
+                                      </property>
+                                      <property name="rightMargin">
+                                        <number>9</number>
+                                      </property>
+                                      <property name="bottomMargin">
+                                        <number>9</number>
+                                      </property>
+                                      <property name="spacing">
+                                        <number>6</number>
+                                      </property>
+                                      <item>
+                                        <widget class="QWidget" name="successConfidenceHost">
+                                          <layout class="QVBoxLayout" name="chartPreviewLayout3">
+                                            </layout>
+                                          <property name="minimumSize">
+                                            <size>
+                                              <width>190</width>
+                                              <height>205</height>
+                                            </size>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                    </layout>
+                                  </widget>
+                                </item>
+                                <item>
+                                  <widget class="QFrame" name="successResultBadge">
+                                    <property name="styleSheet">
+                                      <string>background:#279E87;border-radius:28px;</string>
+                                    </property>
+                                    <property name="minimumSize">
+                                      <size>
+                                        <width>0</width>
+                                        <height>190</height>
+                                      </size>
+                                    </property>
+                                    <property name="maximumSize">
+                                      <size>
+                                        <width>16777215</width>
+                                        <height>230</height>
+                                      </size>
+                                    </property>
+                                    <layout class="QVBoxLayout" name="successBadgeLayout">
+                                      <property name="leftMargin">
+                                        <number>18</number>
+                                      </property>
+                                      <property name="topMargin">
+                                        <number>18</number>
+                                      </property>
+                                      <property name="rightMargin">
+                                        <number>18</number>
+                                      </property>
+                                      <property name="bottomMargin">
+                                        <number>18</number>
+                                      </property>
+                                      <property name="spacing">
+                                        <number>10</number>
+                                      </property>
+                                      <property name="alignment">
+                                        <set>Qt::AlignCenter</set>
+                                      </property>
+                                      <item alignment="Qt::AlignHCenter">
+                                        <widget class="QLabel" name="successResultIcon">
+                                          <property name="text">
+                                            <string>✓</string>
+                                          </property>
+                                          <property name="wordWrap">
+                                            <bool>false</bool>
+                                          </property>
+                                          <property name="alignment">
+                                            <set>Qt::AlignCenter</set>
+                                          </property>
+                                          <property name="minimumSize">
+                                            <size>
+                                              <width>92</width>
+                                              <height>92</height>
+                                            </size>
+                                          </property>
+                                          <property name="maximumSize">
+                                            <size>
+                                              <width>92</width>
+                                              <height>92</height>
+                                            </size>
+                                          </property>
+                                          <property name="styleSheet">
+                                            <string>color:white;font-size:62px;font-weight:500;border:5px solid white;border-radius:46px;background:transparent;</string>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item>
+                                        <widget class="QLabel" name="successResultText">
+                                          <property name="text">
+                                            <string>Legitimate</string>
+                                          </property>
+                                          <property name="styleSheet">
+                                            <string>font-size:25px;color:white;font-weight:700;background:transparent;</string>
+                                          </property>
+                                          <property name="wordWrap">
+                                            <bool>false</bool>
+                                          </property>
+                                          <property name="alignment">
+                                            <set>Qt::AlignCenter</set>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                    </layout>
+                                  </widget>
+                                </item>
+                              </layout>
+                            </item>
+                          </layout>
+                        </widget>
+                        <widget class="QWidget" name="failPage">
+                          <layout class="QHBoxLayout" name="qhboxlayout10" stretch="8,5">
+                            <property name="leftMargin">
+                              <number>32</number>
+                            </property>
+                            <property name="topMargin">
+                              <number>24</number>
+                            </property>
+                            <property name="rightMargin">
+                              <number>30</number>
+                            </property>
+                            <property name="bottomMargin">
+                              <number>21</number>
+                            </property>
+                            <property name="spacing">
+                              <number>32</number>
+                            </property>
+                            <item>
+                              <widget class="QFrame" name="formPanel2">
+                                <property name="styleSheet">
+                                  <string>QFrame#formPanel2 {background:white;border:1px solid #DAE3DE;border-radius:14px;}</string>
+                                </property>
+                                <layout class="QVBoxLayout" name="failFormLayout">
+                                  <property name="leftMargin">
+                                    <number>22</number>
+                                  </property>
+                                  <property name="topMargin">
+                                    <number>22</number>
+                                  </property>
+                                  <property name="rightMargin">
+                                    <number>22</number>
+                                  </property>
+                                  <property name="bottomMargin">
+                                    <number>22</number>
+                                  </property>
+                                  <property name="spacing">
+                                    <number>16</number>
+                                  </property>
+                                  <item>
+                                    <widget class="QLabel" name="failFormTitle">
+                                      <property name="text">
+                                        <string>Fetched Transaction Details</string>
+                                      </property>
+                                      <property name="styleSheet">
+                                        <string>font-size:20px;color:#152A23;font-weight:700;background:transparent;</string>
+                                      </property>
+                                      <property name="wordWrap">
+                                        <bool>false</bool>
+                                      </property>
+                                    </widget>
+                                  </item>
+                                  <item>
+                                    <widget class="QLabel" name="failFormSubtitle">
+                                      <property name="text">
+                                        <string>Nhập thông tin giao dịch cần kiểm tra</string>
+                                      </property>
+                                      <property name="styleSheet">
+                                        <string>font-size:12px;color:#809087;font-weight:400;background:transparent;</string>
+                                      </property>
+                                      <property name="wordWrap">
+                                        <bool>false</bool>
+                                      </property>
+                                    </widget>
+                                  </item>
+                                  <item>
+                                    <spacer name="failTopSpace">
+                                      <property name="orientation">
+                                        <enum>Qt::Vertical</enum>
+                                      </property>
+                                      <property name="sizeHint">
+                                        <size>
+                                          <width>0</width>
+                                          <height>20</height>
+                                        </size>
+                                      </property>
+                                      <property name="sizeType">
+                                        <enum>QSizePolicy::Fixed</enum>
+                                      </property>
+                                    </spacer>
+                                  </item>
+                                  <item>
+                                    <layout class="QGridLayout" name="failCompactInputs" columnstretch="1,1,1">
+                                      <property name="horizontalSpacing">
+                                        <number>16</number>
+                                      </property>
+                                      <property name="verticalSpacing">
+                                        <number>10</number>
+                                      </property>
+                                      <item row="0" column="0">
+                                        <widget class="QLabel" name="failstepCaption">
+                                          <property name="text">
+                                            <string>Step</string>
+                                          </property>
+                                          <property name="styleSheet">
+                                            <string>font-size:13px;color:#6B7D72;font-weight:700;background:transparent;</string>
+                                          </property>
+                                          <property name="wordWrap">
+                                            <bool>false</bool>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item row="1" column="0">
+                                        <widget class="QLineEdit" name="fail_step">
+                                          <property name="text">
+                                            <string />
+                                          </property>
+                                          <property name="placeholderText">
+                                            <string />
+                                          </property>
+                                          <property name="minimumSize">
+                                            <size>
+                                              <width>0</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                          <property name="maximumSize">
+                                            <size>
+                                              <width>16777215</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item row="0" column="1">
+                                        <widget class="QLabel" name="failtypeCaption">
+                                          <property name="text">
+                                            <string>Type</string>
+                                          </property>
+                                          <property name="styleSheet">
+                                            <string>font-size:13px;color:#6B7D72;font-weight:700;background:transparent;</string>
+                                          </property>
+                                          <property name="wordWrap">
+                                            <bool>false</bool>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item row="1" column="1">
+                                        <widget class="QComboBox" name="fail_type">
+                                          <item>
+                                            <property name="text">
+                                              <string>CASH_IN</string>
+                                            </property>
+                                          </item>
+                                          <item>
+                                            <property name="text">
+                                              <string>CASH_OUT</string>
+                                            </property>
+                                          </item>
+                                          <item>
+                                            <property name="text">
+                                              <string>DEBIT</string>
+                                            </property>
+                                          </item>
+                                          <item>
+                                            <property name="text">
+                                              <string>PAYMENT</string>
+                                            </property>
+                                          </item>
+                                          <item>
+                                            <property name="text">
+                                              <string>TRANSFER</string>
+                                            </property>
+                                          </item>
+                                          <property name="placeholderText">
+                                            <string>Chọn loại giao dịch</string>
+                                          </property>
+                                          <property name="currentIndex">
+                                            <number>-1</number>
+                                          </property>
+                                          <property name="minimumSize">
+                                            <size>
+                                              <width>0</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                          <property name="maximumSize">
+                                            <size>
+                                              <width>16777215</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item row="0" column="2">
+                                        <widget class="QLabel" name="failamountCaption">
+                                          <property name="text">
+                                            <string>Amount</string>
+                                          </property>
+                                          <property name="styleSheet">
+                                            <string>font-size:13px;color:#6B7D72;font-weight:700;background:transparent;</string>
+                                          </property>
+                                          <property name="wordWrap">
+                                            <bool>false</bool>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item row="1" column="2">
+                                        <widget class="QLineEdit" name="fail_amount">
+                                          <property name="text">
+                                            <string />
+                                          </property>
+                                          <property name="placeholderText">
+                                            <string />
+                                          </property>
+                                          <property name="minimumSize">
+                                            <size>
+                                              <width>0</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                          <property name="maximumSize">
+                                            <size>
+                                              <width>16777215</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                    </layout>
+                                  </item>
+                                  <item>
+                                    <layout class="QGridLayout" name="failBalanceInputs" columnstretch="1,1">
+                                      <property name="horizontalSpacing">
+                                        <number>24</number>
+                                      </property>
+                                      <item row="0" column="0">
+                                        <widget class="QLabel" name="failoldbalanceOrgCaption">
+                                          <property name="text">
+                                            <string>Old Balance of Origin</string>
+                                          </property>
+                                          <property name="styleSheet">
+                                            <string>font-size:13px;color:#6B7D72;font-weight:700;background:transparent;</string>
+                                          </property>
+                                          <property name="wordWrap">
+                                            <bool>false</bool>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item row="1" column="0">
+                                        <widget class="QLineEdit" name="fail_oldbalanceOrg">
+                                          <property name="text">
+                                            <string />
+                                          </property>
+                                          <property name="placeholderText">
+                                            <string />
+                                          </property>
+                                          <property name="minimumSize">
+                                            <size>
+                                              <width>0</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                          <property name="maximumSize">
+                                            <size>
+                                              <width>16777215</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item row="0" column="1">
+                                        <widget class="QLabel" name="failnewbalanceOrigCaption">
+                                          <property name="text">
+                                            <string>New Balance of Origin</string>
+                                          </property>
+                                          <property name="styleSheet">
+                                            <string>font-size:13px;color:#6B7D72;font-weight:700;background:transparent;</string>
+                                          </property>
+                                          <property name="wordWrap">
+                                            <bool>false</bool>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item row="1" column="1">
+                                        <widget class="QLineEdit" name="fail_newbalanceOrig">
+                                          <property name="text">
+                                            <string />
+                                          </property>
+                                          <property name="placeholderText">
+                                            <string />
+                                          </property>
+                                          <property name="minimumSize">
+                                            <size>
+                                              <width>0</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                          <property name="maximumSize">
+                                            <size>
+                                              <width>16777215</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item row="2" column="0">
+                                        <widget class="QLabel" name="failoldbalanceDestCaption">
+                                          <property name="text">
+                                            <string>Old Balance of Destination</string>
+                                          </property>
+                                          <property name="styleSheet">
+                                            <string>font-size:13px;color:#6B7D72;font-weight:700;background:transparent;</string>
+                                          </property>
+                                          <property name="wordWrap">
+                                            <bool>false</bool>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item row="3" column="0">
+                                        <widget class="QLineEdit" name="fail_oldbalanceDest">
+                                          <property name="text">
+                                            <string />
+                                          </property>
+                                          <property name="placeholderText">
+                                            <string />
+                                          </property>
+                                          <property name="minimumSize">
+                                            <size>
+                                              <width>0</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                          <property name="maximumSize">
+                                            <size>
+                                              <width>16777215</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item row="2" column="1">
+                                        <widget class="QLabel" name="failnewbalanceDestCaption">
+                                          <property name="text">
+                                            <string>New Balance of Destination</string>
+                                          </property>
+                                          <property name="styleSheet">
+                                            <string>font-size:13px;color:#6B7D72;font-weight:700;background:transparent;</string>
+                                          </property>
+                                          <property name="wordWrap">
+                                            <bool>false</bool>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item row="3" column="1">
+                                        <widget class="QLineEdit" name="fail_newbalanceDest">
+                                          <property name="text">
+                                            <string />
+                                          </property>
+                                          <property name="placeholderText">
+                                            <string />
+                                          </property>
+                                          <property name="minimumSize">
+                                            <size>
+                                              <width>0</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                          <property name="maximumSize">
+                                            <size>
+                                              <width>16777215</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <property name="verticalSpacing">
+                                        <number>18</number>
+                                      </property>
+                                    </layout>
+                                  </item>
+                                  <item>
+                                    <spacer name="failBottomSpace">
+                                      <property name="orientation">
+                                        <enum>Qt::Vertical</enum>
+                                      </property>
+                                      <property name="sizeType">
+                                        <enum>QSizePolicy::Expanding</enum>
+                                      </property>
+                                      <property name="sizeHint">
+                                        <size>
+                                          <width>0</width>
+                                          <height>8</height>
+                                        </size>
+                                      </property>
+                                    </spacer>
+                                  </item>
+                                  <item>
+                                    <layout class="QHBoxLayout" name="failActions" stretch="2,1">
+                                      <property name="spacing">
+                                        <number>12</number>
+                                      </property>
+                                      <item>
+                                        <widget class="QPushButton" name="failSubmitButton">
+                                          <property name="text">
+                                            <string>Submit</string>
+                                          </property>
+                                          <property name="minimumSize">
+                                            <size>
+                                              <width>0</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item>
+                                        <widget class="QPushButton" name="failClearButton">
+                                          <property name="text">
+                                            <string>Clear</string>
+                                          </property>
+                                          <property name="minimumSize">
+                                            <size>
+                                              <width>0</width>
+                                              <height>44</height>
+                                            </size>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                    </layout>
+                                  </item>
+                                </layout>
+                              </widget>
+                            </item>
+                            <item>
+                              <layout class="QVBoxLayout" name="qvboxlayout17" stretch="0,3,2">
+                                <property name="leftMargin">
+                                  <number>0</number>
+                                </property>
+                                <property name="topMargin">
+                                  <number>0</number>
+                                </property>
+                                <property name="rightMargin">
+                                  <number>0</number>
+                                </property>
+                                <property name="bottomMargin">
+                                  <number>0</number>
+                                </property>
+                                <property name="spacing">
+                                  <number>16</number>
+                                </property>
+                                <item>
+                                  <widget class="QLabel" name="qlabel37">
+                                    <property name="styleSheet">
+                                      <string>font-size:17px;color:#050505;font-weight:700;background:transparent;</string>
+                                    </property>
+                                    <property name="text">
+                                      <string>Fraud Detected Confidence:</string>
+                                    </property>
+                                    <property name="wordWrap">
+                                      <bool>false</bool>
+                                    </property>
+                                  </widget>
+                                </item>
+                                <item>
+                                  <widget class="QFrame" name="card6">
+                                    <property name="styleSheet">
+                                      <string>QFrame#card6 {background:white;border:1px solid #DAE3DE;border-radius:7px;}</string>
+                                    </property>
+                                    <layout class="QVBoxLayout" name="qvboxlayout18" stretch="0">
+                                      <property name="leftMargin">
+                                        <number>9</number>
+                                      </property>
+                                      <property name="topMargin">
+                                        <number>9</number>
+                                      </property>
+                                      <property name="rightMargin">
+                                        <number>9</number>
+                                      </property>
+                                      <property name="bottomMargin">
+                                        <number>9</number>
+                                      </property>
+                                      <property name="spacing">
+                                        <number>6</number>
+                                      </property>
+                                      <item>
+                                        <widget class="QWidget" name="failConfidenceHost">
+                                          <layout class="QVBoxLayout" name="chartPreviewLayout4">
+                                            </layout>
+                                          <property name="minimumSize">
+                                            <size>
+                                              <width>190</width>
+                                              <height>205</height>
+                                            </size>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                    </layout>
+                                  </widget>
+                                </item>
+                                <item>
+                                  <widget class="QFrame" name="failResultBadge">
+                                    <property name="styleSheet">
+                                      <string>background:#C80D12;border-radius:28px;</string>
+                                    </property>
+                                    <property name="minimumSize">
+                                      <size>
+                                        <width>0</width>
+                                        <height>190</height>
+                                      </size>
+                                    </property>
+                                    <property name="maximumSize">
+                                      <size>
+                                        <width>16777215</width>
+                                        <height>230</height>
+                                      </size>
+                                    </property>
+                                    <layout class="QVBoxLayout" name="failBadgeLayout">
+                                      <property name="leftMargin">
+                                        <number>18</number>
+                                      </property>
+                                      <property name="topMargin">
+                                        <number>18</number>
+                                      </property>
+                                      <property name="rightMargin">
+                                        <number>18</number>
+                                      </property>
+                                      <property name="bottomMargin">
+                                        <number>18</number>
+                                      </property>
+                                      <property name="spacing">
+                                        <number>10</number>
+                                      </property>
+                                      <property name="alignment">
+                                        <set>Qt::AlignCenter</set>
+                                      </property>
+                                      <item alignment="Qt::AlignHCenter">
+                                        <widget class="QLabel" name="failResultIcon">
+                                          <property name="text">
+                                            <string>×</string>
+                                          </property>
+                                          <property name="wordWrap">
+                                            <bool>false</bool>
+                                          </property>
+                                          <property name="alignment">
+                                            <set>Qt::AlignCenter</set>
+                                          </property>
+                                          <property name="minimumSize">
+                                            <size>
+                                              <width>92</width>
+                                              <height>92</height>
+                                            </size>
+                                          </property>
+                                          <property name="maximumSize">
+                                            <size>
+                                              <width>92</width>
+                                              <height>92</height>
+                                            </size>
+                                          </property>
+                                          <property name="styleSheet">
+                                            <string>color:white;font-size:62px;font-weight:500;border:5px solid white;border-radius:46px;background:transparent;</string>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                      <item>
+                                        <widget class="QLabel" name="failResultText">
+                                          <property name="text">
+                                            <string>Fraud</string>
+                                          </property>
+                                          <property name="styleSheet">
+                                            <string>font-size:25px;color:white;font-weight:700;background:transparent;</string>
+                                          </property>
+                                          <property name="wordWrap">
+                                            <bool>false</bool>
+                                          </property>
+                                          <property name="alignment">
+                                            <set>Qt::AlignCenter</set>
+                                          </property>
+                                        </widget>
+                                      </item>
+                                    </layout>
+                                  </widget>
+                                </item>
+                              </layout>
+                            </item>
+                          </layout>
+                        </widget>
+                        <widget class="QWidget" name="recordsPage">
+                          <layout class="QVBoxLayout" name="historyLayout">
+                            <property name="leftMargin">
+                              <number>24</number>
+                            </property>
+                            <property name="topMargin">
+                              <number>24</number>
+                            </property>
+                            <property name="rightMargin">
+                              <number>24</number>
+                            </property>
+                            <property name="bottomMargin">
+                              <number>24</number>
+                            </property>
+                            <property name="spacing">
+                              <number>18</number>
+                            </property>
+                            <item>
+                              <layout class="QHBoxLayout" name="historyHeading" stretch="1,0">
+                                <item>
+                                  <layout class="QVBoxLayout" name="historyTitles">
+                                    <property name="spacing">
+                                      <number>5</number>
+                                    </property>
+                                    <item>
+                                      <widget class="QLabel" name="historyTitle">
+                                        <property name="text">
+                                          <string>Lịch sử dự đoán</string>
+                                        </property>
+                                        <property name="styleSheet">
+                                          <string>font-size:24px;color:#153F35;font-weight:700;background:transparent;</string>
+                                        </property>
+                                        <property name="wordWrap">
+                                          <bool>false</bool>
+                                        </property>
+                                      </widget>
+                                    </item>
+                                    <item>
+                                      <widget class="QLabel" name="historySubtitle">
+                                        <property name="text">
+                                          <string>Toàn bộ giao dịch đã được lưu trong hệ thống</string>
+                                        </property>
+                                        <property name="styleSheet">
+                                          <string>font-size:12px;color:#809087;font-weight:400;background:transparent;</string>
+                                        </property>
+                                        <property name="wordWrap">
+                                          <bool>false</bool>
+                                        </property>
+                                      </widget>
+                                    </item>
+                                  </layout>
+                                </item>
+                                <item>
+                                  <widget class="QLabel" name="historyCount">
+                                    <property name="text">
+                                      <string>0 giao dịch</string>
+                                    </property>
+                                    <property name="styleSheet">
+                                      <string>font-size:12px;color:#718277;font-weight:400;background:transparent;</string>
+                                    </property>
+                                    <property name="wordWrap">
+                                      <bool>false</bool>
+                                    </property>
+                                  </widget>
+                                </item>
+                              </layout>
+                            </item>
+                            <item>
+                              <layout class="QHBoxLayout" name="historyFilters" stretch="3,2,2,3,1,0">
+                                <property name="spacing">
+                                  <number>10</number>
+                                </property>
+                                <item>
+                                  <widget class="QLineEdit" name="idFilterEdit">
+                                    <property name="placeholderText">
+                                      <string>Transaction ID</string>
+                                    </property>
+                                    <property name="minimumSize">
+                                      <size>
+                                        <width>145</width>
+                                        <height>36</height>
+                                      </size>
+                                    </property>
+                                  </widget>
+                                </item>
+                                <item>
+                                  <widget class="QComboBox" name="typeFilter">
+                                    <property name="minimumSize">
+                                      <size>
+                                        <width>120</width>
+                                        <height>36</height>
+                                      </size>
+                                    </property>
+                                    <item>
+                                      <property name="text">
+                                        <string>Mọi loại giao dịch</string>
+                                      </property>
+                                    </item>
+                                    <item>
+                                      <property name="text">
+                                        <string>CASH_IN</string>
+                                      </property>
+                                    </item>
+                                    <item>
+                                      <property name="text">
+                                        <string>CASH_OUT</string>
+                                      </property>
+                                    </item>
+                                    <item>
+                                      <property name="text">
+                                        <string>DEBIT</string>
+                                      </property>
+                                    </item>
+                                    <item>
+                                      <property name="text">
+                                        <string>PAYMENT</string>
+                                      </property>
+                                    </item>
+                                    <item>
+                                      <property name="text">
+                                        <string>TRANSFER</string>
+                                      </property>
+                                    </item>
+                                  </widget>
+                                </item>
+                                <item>
+                                  <widget class="QComboBox" name="predictionFilter">
+                                    <property name="minimumSize">
+                                      <size>
+                                        <width>105</width>
+                                        <height>36</height>
+                                      </size>
+                                    </property>
+                                    <item>
+                                      <property name="text">
+                                        <string>Mọi kết quả</string>
+                                      </property>
+                                    </item>
+                                    <item>
+                                      <property name="text">
+                                        <string>Fraud</string>
+                                      </property>
+                                    </item>
+                                    <item>
+                                      <property name="text">
+                                        <string>Legitimate</string>
+                                      </property>
+                                    </item>
+                                  </widget>
+                                </item>
+                                <item>
+                                  <widget class="QComboBox" name="userFilter">
+                                    <property name="minimumSize">
+                                      <size>
+                                        <width>150</width>
+                                        <height>36</height>
+                                      </size>
+                                    </property>
+                                    <item>
+                                      <property name="text">
+                                        <string>Tất cả người dùng</string>
+                                      </property>
+                                    </item>
+                                  </widget>
+                                </item>
+                                <item>
+                                  <widget class="QComboBox" name="sortFilter">
+                                    <property name="minimumSize">
+                                      <size>
+                                        <width>85</width>
+                                        <height>36</height>
+                                      </size>
+                                    </property>
+                                    <item>
+                                      <property name="text">
+                                        <string>Mới nhất</string>
+                                      </property>
+                                    </item>
+                                    <item>
+                                      <property name="text">
+                                        <string>Cũ nhất</string>
+                                      </property>
+                                    </item>
+                                  </widget>
+                                </item>
+                                <item>
+                                  <widget class="QPushButton" name="resetFiltersButton">
+                                    <property name="text">
+                                      <string>Xóa lọc</string>
+                                    </property>
+                                    <property name="styleSheet">
+                                      <string>background:transparent;color:#167C69;padding:6px 0px;text-align:right;font-weight:600;</string>
+                                    </property>
+                                  </widget>
+                                </item>
+                              </layout>
+                            </item>
+                            <item>
+                              <widget class="QTableWidget" name="recordsTable">
+                                <property name="rowCount">
+                                  <number>0</number>
+                                </property>
+                                <property name="columnCount">
+                                  <number>8</number>
+                                </property>
+                                <property name="showGrid">
+                                  <bool>false</bool>
+                                </property>
+                                <property name="wordWrap">
+                                  <bool>false</bool>
+                                </property>
+                                <property name="editTriggers">
+                                  <set>QAbstractItemView::NoEditTriggers</set>
+                                </property>
+                                <property name="selectionBehavior">
+                                  <enum>QAbstractItemView::SelectRows</enum>
+                                </property>
+                                <column>
+                                  <property name="text">
+                                    <string>Transaction ID</string>
+                                  </property>
+                                </column>
+                                <column>
+                                  <property name="text">
+                                    <string>Type</string>
+                                  </property>
+                                </column>
+                                <column>
+                                  <property name="text">
+                                    <string>Amount</string>
+                                  </property>
+                                </column>
+                                <column>
+                                  <property name="text">
+                                    <string>Fraud Score</string>
+                                  </property>
+                                </column>
+                                <column>
+                                  <property name="text">
+                                    <string>Prediction</string>
+                                  </property>
+                                </column>
+                                <column>
+                                  <property name="text">
+                                    <string>Checked By</string>
+                                  </property>
+                                </column>
+                                <column>
+                                  <property name="text">
+                                    <string>Created At</string>
+                                  </property>
+                                </column>
+                                <column>
+                                  <property name="text">
+                                    <string />
+                                  </property>
+                                </column>
+                              </widget>
+                            </item>
+                          </layout>
+                        </widget>
+                      </widget>
+                    </item>
+                  </layout>
+                </item>
+              </layout>
+            </widget>
+          </widget>
+        </item>
+      </layout>
+    </widget>
+    <property name="minimumSize">
+      <size>
+        <width>1160</width>
+        <height>700</height>
+      </size>
+    </property>
+  </widget>
+  <resources />
+  <connections />
+</ui>
