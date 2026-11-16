@@ -1,0 +1,77 @@
+{
+  "customer": {
+    "name": "Nguyễn Minh Anh",
+    "shortName": "Minh Anh",
+    "initials": "MA",
+    "account": "1028 6128 004",
+    "bank": "AEGIS Bank",
+    "balance": 168500000,
+    "phone": "••• ••• 286"
+  },
+  "banks": [
+    "AEGIS Bank (mô phỏng)",
+    "Ngân hàng Thịnh Vượng (mô phỏng)",
+    "Ngân hàng An Tâm (mô phỏng)",
+    "Ngân hàng Việt Thành (mô phỏng)"
+  ],
+  "recipients": [
+    {
+      "name": "Trần Ngọc Hà",
+      "initials": "NH",
+      "account": "00712891034",
+      "bank": 1
+    },
+    {
+      "name": "Lê Minh Khang",
+      "initials": "MK",
+      "account": "00712891035",
+      "bank": 2
+    },
+    {
+      "name": "Phạm Thu Trang",
+      "initials": "TT",
+      "account": "00712891036",
+      "bank": 3
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "normal",
+      "title": "Giao dịch bình thường",
+      "description": "Hoàn tất chuyển tiền, không có cảnh báo.",
+      "icon": "check"
+    },
+    {
+      "id": "flagged",
+      "title": "Rà soát sau giao dịch",
+      "description": "Giao dịch thành công, sau đó có thông báo bảo mật.",
+      "icon": "shield"
+    },
+    {
+      "id": "cleared",
+      "title": "Hoàn tất rà soát",
+      "description": "Đã kiểm tra, không áp dụng hạn chế bổ sung.",
+      "icon": "verified"
+    },
+    {
+      "id": "protected",
+      "title": "Bảo vệ tài khoản",
+      "description": "Minh họa quyết định hạn chế sau quá trình rà soát.",
+      "icon": "lock"
+    }
+  ],
+  "messages": {
+    "review": {
+      "title": "Giao dịch đang được rà soát",
+      "text": "Ngân hàng đã ghi nhận một giao dịch cần được kiểm tra bổ sung nhằm bảo vệ tài khoản của bạn. Giao dịch đã hoàn tất và đang được bộ phận chuyên trách rà soát."
+    },
+    "cleared": {
+      "title": "Đã hoàn tất rà soát giao dịch",
+      "text": "Ngân hàng đã hoàn tất việc rà soát giao dịch. Hiện không có biện pháp hạn chế bổ sung nào được áp dụng đối với tài khoản của bạn."
+    },
+    "protected": {
+      "title": "Thông tin bảo vệ tài khoản",
+      "text": "Sau quá trình rà soát của bộ phận chuyên trách, một số chức năng của tài khoản đã được tạm thời hạn chế nhằm bảo đảm an toàn. Vui lòng liên hệ ngân hàng qua kênh hỗ trợ chính thức để được hướng dẫn."
+    }
+  }
+}
