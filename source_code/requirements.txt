@@ -1,9 +1,0 @@
-PyQt6>=6.6,<7
-mysql-connector-python>=9.2,<10
-# Use installed model libraries when they satisfy the real inference contract.
-# No exact-version pins from model_manifest.json are enforced.
-numpy
-pandas
-scikit-learn
-joblib
-xgboost
